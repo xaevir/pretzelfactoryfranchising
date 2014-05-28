@@ -6048,11 +6048,8 @@ body {
   background-color: transparent;
   color: #ccc;
 }
-#home #banner {
-  background-color: #65b14d;
-}
 #home #banner .col-1 {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 #home #banner .col-1 h1 {
   color: #fff;
@@ -6108,156 +6105,165 @@ body {
 #home #support h3 {
   color: #8dd577;
 }
-#home-body h1 {
+#home-hd {
+  background: url('/img/pretzel-bg.jpg') no-repeat 0 0;
+  background-size: cover !important;
+  height: 100%;
+  position: relative;
+}
+#home-hd nav .container {
+  max-width: 100%;
+}
+#NOTUSINGhome-body h1 {
   text-transform: uppercase;
   text-align: center;
 }
-#home-body p {
+#NOTUSINGhome-body p {
   font-size: 18px;
   font-family: proximaNova, sans-serif;
   font-weight: 300;
 }
-#home-body section {
+#NOTUSINGhome-body section {
   padding: 60px 0;
 }
 @media (min-width: 768px) {
-  #home-body section {
+  #NOTUSINGhome-body section {
     padding: 60px 0;
   }
 }
-#home-body #welcome {
-  padding-top: 120px;
+#NOTUSINGhome-body #welcome {
+  padding-top: 80px;
 }
-#home-body #welcome h1 {
+#NOTUSINGhome-body #welcome h1 {
   line-height: 1;
   font-weight: 100;
   letter-spacing: 5px;
   font-size: 40px;
 }
-#home-body #welcome p {
+#NOTUSINGhome-body #welcome p {
   font-size: 20px;
   text-align: center;
   font-weight: 100;
 }
-#home-body #eight-styles h1 {
+#NOTUSINGhome-body #eight-styles h1 {
   font-weight: 100;
   font-size: 50px;
   margin-bottom: 1em;
 }
-#home-body #eight-styles .col {
+#NOTUSINGhome-body #eight-styles .col {
   margin-bottom: 20px;
   position: relative;
 }
-#home-body #eight-styles .col img {
+#NOTUSINGhome-body #eight-styles .col img {
   display: block;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
-#home-body #eight-styles .col h2 {
+#NOTUSINGhome-body #eight-styles .col h2 {
   font-size: 20px;
   text-align: center;
   font-weight: normal;
 }
-#home-body #eight-styles .col p {
+#NOTUSINGhome-body #eight-styles .col p {
   text-align: center;
   font-size: 16px;
   font-weight: 300;
 }
 @media (max-width: 767px) {
-  #home-body #eight-styles .col {
+  #NOTUSINGhome-body #eight-styles .col {
     margin-bottom: 50px;
   }
 }
-#home-body #colors {
+#NOTUSINGhome-body #colors {
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 992px) {
-  #home-body #colors .col-md-1 {
+  #NOTUSINGhome-body #colors .col-md-1 {
     width: 9.09090909091%;
   }
 }
-#home-body #colors h1 {
+#NOTUSINGhome-body #colors h1 {
   font-weight: 100;
   font-size: 50px;
   margin-bottom: 1em;
 }
-#home-body #colors img {
+#NOTUSINGhome-body #colors img {
   width: 100%;
 }
-#home-body #colors .sizes {
+#NOTUSINGhome-body #colors .sizes {
   margin-top: 80px;
 }
-#home-body #colors .sizes p {
+#NOTUSINGhome-body #colors .sizes p {
   text-align: center;
   font-size: 22px;
 }
-#home-body #colors .row .block {
+#NOTUSINGhome-body #colors .row .block {
   height: 100px;
 }
-#home-body #colors .black .block {
+#NOTUSINGhome-body #colors .black .block {
   background: #000;
 }
-#home-body #colors .grey .block {
+#NOTUSINGhome-body #colors .grey .block {
   background: #717173;
 }
-#home-body #colors .ivory .block {
+#NOTUSINGhome-body #colors .ivory .block {
   background: #f8f9f4;
 }
-#home-body #colors .navy .block {
+#NOTUSINGhome-body #colors .navy .block {
   background: #120e4b;
 }
-#home-body #colors .chocolate .block {
+#NOTUSINGhome-body #colors .chocolate .block {
   background: #58321b;
 }
-#home-body #colors .turquoise .block {
+#NOTUSINGhome-body #colors .turquoise .block {
   background: #3cb5d2;
 }
-#home-body #colors .pink .block {
+#NOTUSINGhome-body #colors .pink .block {
   background: #ef4e82;
 }
-#home-body #colors .green .block {
+#NOTUSINGhome-body #colors .green .block {
   background: #169232;
 }
-#home-body #colors .yellow .block {
+#NOTUSINGhome-body #colors .yellow .block {
   background: #fee63b;
 }
-#home-body #colors .red .block {
+#NOTUSINGhome-body #colors .red .block {
   background: #cb1311;
 }
-#home-body #colors .purple .block {
+#NOTUSINGhome-body #colors .purple .block {
   background: #582582;
 }
-#home-body #models img {
+#NOTUSINGhome-body #models img {
   width: 100%;
 }
-#home-body #models h1 {
+#NOTUSINGhome-body #models h1 {
   font-weight: 100;
   font-size: 50px;
 }
-#home-body #models h1 span {
+#NOTUSINGhome-body #models h1 span {
   display: block;
   font-size: 20px;
 }
-#home-body #models div[class^='col-xs-'] {
+#NOTUSINGhome-body #models div[class^='col-xs-'] {
   padding: 0;
 }
-#home-body #testimonials {
+#NOTUSINGhome-body #testimonials {
   background: #e8e8e8;
   margin-top: -60px;
   padding: 120px 0;
 }
-#home-body #testimonials h1 {
+#NOTUSINGhome-body #testimonials h1 {
   color: #333;
   font-weight: 100;
   font-size: 50px;
   margin-bottom: 1em;
 }
-#home-body #testimonials .item {
+#NOTUSINGhome-body #testimonials .item {
   margin: 0 15px;
 }
-#home-body #testimonials .item p {
+#NOTUSINGhome-body #testimonials .item p {
   position: relative;
   background: #fff;
   border-radius: 10px;
@@ -6266,7 +6272,7 @@ body {
   color: #333;
   text-align: center;
 }
-#home-body #testimonials .item p:before {
+#NOTUSINGhome-body #testimonials .item p:before {
   content: ' ';
   position: absolute;
   width: 0;
@@ -6276,13 +6282,13 @@ body {
   border: 17px solid;
   border-color: #fff transparent transparent #fff;
 }
-#home-body #testimonials .item h2 {
+#NOTUSINGhome-body #testimonials .item h2 {
   font-size: 16px;
   font-weight: 300;
   color: #333;
   text-align: center;
 }
-#home-body #testimonials .owl-theme .owl-controls .owl-page span {
+#NOTUSINGhome-body #testimonials .owl-theme .owl-controls .owl-page span {
   background: #fff;
 }
 #story .banner img {
