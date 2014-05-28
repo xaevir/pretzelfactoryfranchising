@@ -14,5 +14,5 @@ app.use(router(app));
 
 require('./routes/index')
 
-app.listen(3000);
-//console.log('listening on port ' + port);
+app.listen(8110);
+console.log('listening on port 8110')
