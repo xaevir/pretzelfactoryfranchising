@@ -23,11 +23,19 @@ html(lang="en")
       include nav
     block content
     //include footer
+    script(src="/js/skrollr.min.js")
     script.
       $(document).ready(function() {
         $(".owl-carousel").owlCarousel({singleItem:true});
+        var h = $(window).height()
+        $('#home-hd').css('height', h);
+        var s = skrollr.init();
+        $('.moving').css('height', h*3)
+        $('.moving').css('margin-top', h+'px')
+        $('#steps').css('height', h)
+        var w = $(window).width()
+        $('#my-container').css('width', w)
+        $('#bg-image').css('height', h)
+
       });
-    script(src="/js/skrollr.min.js")
-    script.
-      var s = skrollr.init();
 

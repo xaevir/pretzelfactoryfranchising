@@ -227,6 +227,7 @@ body {
   }
   #support {
     padding-top: 60px;
+    margin-bottom: 120px;
     h2 {
       color: #fff; 
       padding-top: 30px;
@@ -282,18 +283,24 @@ body {
     }
   }
   #steps {
-    padding-top: 120px;
+    //padding-top: 120px;
     text-align: center;
-    h1 {
+    position: relative;
+    #bg-image {
       background: url(/img/franchise-owner.jpg) no-repeat center center;
-      background-size: cover !important;
-      height: 600px;
+      background-size: cover !important;   
+      width: 100%;
+    }
+    h1 {
+      position: relative;
+      z-index: 2;
+      top: 300px;
       color: #fff;
-      padding-top: 300px;
-      margin-bottom: 0;
+      margin: 0;
       span {
         border: 5px solid #fff;
         padding: 30px;
+        display: inline-block;
       }
     }
     div[class^='col-sm-'] { 
@@ -332,13 +339,23 @@ body {
       font-size: 16px;
       color: #fff;
       padding: 0 20px;
-      min-height: 155px;
+      min-height: 115px;
       line-height: 1.2;
     }
     .owl-theme .owl-controls .owl-page span {
       background: #2ECC71;
       width: 25px;
       height: 25px;
+    }
+    .container-fluid {
+      position: relative; 
+      overflow: hidden;
+      padding: 0;
+    }
+    .row {
+      position: relative; 
+      width: 100%;
+      margin: 0;
     }
 
   }
