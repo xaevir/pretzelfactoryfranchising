@@ -11,6 +11,10 @@ html(lang="en")
     else
       title #{titleBase}
     link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/js/owl-carousel/owl.carousel.css')
+    link(rel='stylesheet', href='/js/owl-carousel/owl.theme.css')
+    script(src="/js/jquery.js")
+    script(src="/js/owl-carousel/owl.carousel.js")
 
     block head
   body(id= locals.id ? locals.id : '')
@@ -19,4 +23,11 @@ html(lang="en")
       include nav
     block content
     //include footer
+    script.
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({singleItem:true});
+      });
+    script(src="/js/skrollr.min.js")
+    script.
+      var s = skrollr.init();
 
