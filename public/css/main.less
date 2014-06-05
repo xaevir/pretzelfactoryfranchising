@@ -110,7 +110,7 @@ body {
       font-size: 16px;
       border-radius: 3px;
       &:hover {
-        background-color: #db002c;
+        background-color: #db002c !important;
         color: #fff !important;
       }
     }
@@ -358,6 +358,10 @@ body {
       background: #2ECC71;
       background: @pretzel-green;
       border: 1px solid #fff;
+      cursor: pointer;
+      &:hover {
+        background: lighten(@pretzel-green, 13.5%);
+      }
     }
     .lighter {
       //background: lighten(#2ECC71, 13.5%) !important;

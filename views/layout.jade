@@ -33,14 +33,10 @@ html(lang="en")
           if (direction == 'up')
             $('#scroll-reveal .navbar').removeClass('show navbar-fixed-top')
         })
-        
-        $(".owl-carousel").owlCarousel({singleItem:true});
-        var h = $(window).height()
-        $('header').css('height', h);
-        var s = skrollr.init();
-        //$('.moving').css('height', h*3)
-        //$('.moving').css('margin-top', h+'px')
-        //$('#steps').css('height', h)
-        
+
+        $(".scroll-down").click(function() {
+          $('html, body').animate({'scrollTop': $('#request-info').offset().top}, 2000);
+        })
+
       });
 

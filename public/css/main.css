@@ -5944,7 +5944,7 @@ body {
   border-radius: 3px;
 }
 .navbar .request-info a:hover {
-  background-color: #db002c;
+  background-color: #db002c !important;
   color: #fff !important;
 }
 #nav-in-header .navbar {
@@ -6160,6 +6160,10 @@ body {
   background: #2ECC71;
   background: #006846;
   border: 1px solid #fff;
+  cursor: pointer;
+}
+#home #steps div[class^='col-sm-']:hover {
+  background: #00ad74;
 }
 #home #steps .content {
   padding-bottom: 20px;
