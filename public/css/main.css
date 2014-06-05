@@ -5785,6 +5785,39 @@ button.close {
   /* Legacy iOS */
 }
 @font-face {
+  font-family: 'aleo';
+  src: url('/fonts/aleo/aleoRegular.eot');
+  src: url('/fonts/aleo/aleoRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/aleo/aleoRegular.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/aleo/aleoRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/aleo/aleoRegular.svg#proxima_nova') format('svg');
+  font-weight: normal;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'aleo';
+  src: url('/fonts/aleo/aleoBold.eot');
+  src: url('/fonts/aleo/aleoBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/aleo/aleoBold.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/aleo/aleoBold.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/aleo/aleoBold.svg#proxima_nova') format('svg');
+  font-weight: 700;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'aleo';
+  src: url('/fonts/aleo/aleoLight.eot');
+  src: url('/fonts/aleo/aleoLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/aleo/aleoLight.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/aleo/aleoLight.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/aleo/aleoLight.svg#proxima_nova') format('svg');
+  font-weight: 300;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
   font-family: 'proximaNova';
   src: url('/fonts/proximaNova/proximaNova.eot');
   src: url('/fonts/proximaNova/proximaNova.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -6037,7 +6070,7 @@ body {
 }
 #home #awards h1 {
   color: #fff;
-  text-shadow: 2px 1px #000;
+  text-shadow: 1px 1px #000;
   font-weight: 700;
 }
 #home #awards img {
@@ -6048,7 +6081,7 @@ body {
 }
 #home #awards p {
   margin-bottom: 0;
-  text-shadow: 2px 1px #000;
+  text-shadow: 1px 1px #000;
   color: #000;
 }
 #home #awards .award {
@@ -6070,19 +6103,6 @@ body {
   font-weight: 700;
   margin-bottom: 30px;
 }
-#home #support .panel-1,
-#home #support .panel-2 {
-  padding-bottom: 30px;
-}
-#home #support .panel-1 {
-  background: #3498DB;
-}
-#home #support .panel-2 {
-  background: #34495E;
-}
-#home #support .panel-2 .number-circle {
-  color: #34495e;
-}
 #home #support .number-circle {
   display: none;
   border-radius: 50%;
@@ -6102,13 +6122,22 @@ body {
 #home #support h4 img {
   vertical-align: bottom;
 }
-#home #support .owl-theme .owl-controls .owl-page span {
-  background: #fff;
-  width: 25px;
-  height: 25px;
+#home #more-support {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
-#home #support .owl-wrapper-outer {
-  min-height: 510px;
+#home #more-support h2 {
+  padding-top: 30px;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#home #more-support h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+#home #more-support h4 img {
+  vertical-align: bottom;
 }
 #home #steps {
   text-align: center;
@@ -6129,10 +6158,8 @@ body {
 }
 #home #steps div[class^='col-sm-'] {
   background: #2ECC71;
+  background: #006846;
   border: 1px solid #fff;
-}
-#home #steps .lighter {
-  background: #63dc96 !important;
 }
 #home #steps .content {
   padding-bottom: 20px;
@@ -6171,20 +6198,19 @@ body {
 #home #steps span {
   color: #fff;
 }
-#home #steps .owl-theme .owl-controls .owl-page span {
-  background: #2ECC71;
-  width: 25px;
-  height: 25px;
+#home #request-info {
+  margin-bottom: 120px;
+  padding-bottom: 60px;
+  background: #e8e8e8;
+  padding-top: 60px;
 }
-#home #steps .container-fluid {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
+#home #request-info form {
+  max-width: 300px;
+  margin: 0 auto;
 }
-#home #steps .row {
-  position: relative;
-  width: 100%;
-  margin: 0;
+#home #request-info h1 {
+  font-family: aleo, sans-serif;
+  font-weight: 700;
 }
 #alert {
   position: fixed;

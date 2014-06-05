@@ -256,7 +256,7 @@ body {
     padding: 30px 0;
     h1 {
       color: #fff;
-      text-shadow: 2px 1px #000;
+      text-shadow: 1px 1px #000;
       font-weight: 700;
       span {
         //background: rgba(255, 255, 255, .5);
@@ -270,7 +270,7 @@ body {
     }
     p {
       margin-bottom: 0;
-      text-shadow: 2px 1px #000;
+      text-shadow: 1px 1px #000;
       color: #000;
     }
     .award {
@@ -293,18 +293,6 @@ body {
       font-weight: 700;
       margin-bottom: 30px;
     }
-    .panel-1, .panel-2 {
-      padding-bottom: 30px;
-    }
-    .panel-1 {
-      background: #3498DB;
-    }
-    .panel-2 {
-      background: #34495E;
-      .number-circle {
-        color: #34495E 
-      }
-    }
     .number-circle {
       display: none;
       border-radius: 50%;
@@ -320,7 +308,6 @@ body {
     h4 {
       font-size: 18px;
       font-weight: 700;
-      //color: @pretzel-green;
       &::before {
         //content: url(/img/checkmark.png);
       }
@@ -328,17 +315,30 @@ body {
         vertical-align: bottom; 
       }
     }
-    .owl-theme .owl-controls .owl-page span {
-      background: #fff;
-      width: 25px;
-      height: 25px;
-    }
-    .owl-wrapper-outer {
-      min-height: 510px;
-    }
   }
+  #more-support {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    h2 {
+      padding-top: 30px;
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      &::before {
+        //content: url(/img/checkmark.png);
+      }
+      img {
+        vertical-align: bottom; 
+      }
+    }
+
+  }
+
   #steps {
-    //padding-top: 120px;
     text-align: center;
     position: relative;
     h1 {
@@ -356,13 +356,13 @@ body {
     }
     div[class^='col-sm-'] { 
       background: #2ECC71;
+      background: @pretzel-green;
       border: 1px solid #fff;
     }
     .lighter {
-      background: lighten(#2ECC71, 13.5%) !important;
+      //background: lighten(#2ECC71, 13.5%) !important;
     }
     .content {
-      //background: #73e0b8;
       padding-bottom: 20px;
     }
     img {
@@ -402,22 +402,23 @@ body {
     span {
       color: #fff; 
     }
-    .owl-theme .owl-controls .owl-page span {
-      background: #2ECC71;
-      width: 25px;
-      height: 25px;
+  }
+  #request-info {
+    margin-bottom: 120px;
+    padding-bottom: 60px;
+    background: #e8e8e8;
+    padding-top: 60px;
+    form {
+      max-width: 300px;
+      margin: 0 auto;
     }
-    .container-fluid {
-      position: relative; 
-      overflow: hidden;
-      padding: 0;
+    input {
+      //border: 0; 
     }
-    .row {
-      position: relative; 
-      width: 100%;
-      margin: 0;
+    h1 {
+      font-family: aleo, sans-serif; 
+      font-weight: 700;
     }
-
   }
 }
 
