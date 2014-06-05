@@ -1,19 +1,22 @@
-@import "bootstrap-less/bootstrap.less";
+//@import "bootstrap-less/bootstrap.less";
+@import "bootstrap-3.1.1/less/bootstrap.less";
 //@import "../js/libs/bootstrap/dist/css/bootstrap.css";
 @import "fonts.less";
 //@import "../fonts/icomoon/style.css";
 //@import (less) "../fonts/icons/style.css";
-//@import "bootstrap-compiled.less";
+
+
+@icon-font-path:          "bootstrap-3.1.1/fonts/";
 
 //@media (min-width: 1070px) {//992
   //.container {
    // max-width: 800px;
   //}
 //}
-.container-narrow {
-  .container-fluid;
-  max-width: 900px;
-}
+//.container-narrow {
+//  .container-fluid;
+//  max-width: 900px;
+//}
 
 @forest-green: #338a10;
 @light-green: #40d47e;
@@ -67,7 +70,7 @@ body {
   //height: 150px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 0;
-  padding-top: 9px;
+  //padding-top: 9px;
   .navbar-nav {
     margin-top: 18px;
   }
@@ -89,8 +92,6 @@ body {
   }
   li {
     a {
-      padding-top: 25px;
-      padding-bottom: 25px;
       font-size: 17px;
       color: #0a4f6c;
       &:hover {
@@ -104,7 +105,7 @@ body {
       background-color: #ff0033;
       background-color: #d95253;
       padding: 10px 12px;
-      margin-top: 14px;
+      //margin-top: 14px;
       color: #fff !important;
       font-size: 16px;
       border-radius: 3px;
@@ -119,6 +120,8 @@ body {
 #nav-in-header .navbar {
   box-shadow: none;
   ul li a {
+    //padding-top: 25px;
+    //padding-bottom: 25px;
     color: #fff;
     font-size: 16px;
     &:hover {
@@ -134,11 +137,20 @@ body {
   right: 0;
   left: 0;
   background: #fff;
-  -webkit-transform: translateY(-110%);
-  -moz-transform: translateY(-110%);
-  -o-transform: translateY(-110%);
-  -ms-transform: translateY(-110%);
-  transform: translateY(-110%);
+  ul li a {
+    color: @pretzel-green;
+    color: #333;
+    font-size: 16px;
+    &:hover {
+      background-color: transparent;
+      color: #ccc;
+    }
+  }
+  -webkit-transform: translateY(-150%);
+  -moz-transform: translateY(-150%);
+  -o-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  transform: translateY(-150%);
   -webkit-transition: -webkit-transform 500ms;
   -moz-transition: -moz-transform 500ms;
   -o-transition: -o-transform 500ms;
@@ -151,14 +163,6 @@ body {
   -o-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
-  ul li a {
-    color: @pretzel-green;
-    font-size: 16px;
-    &:hover {
-      background-color: transparent;
-      color: #ccc;
-    }
-  }
 }
 
 
@@ -337,15 +341,11 @@ body {
     //padding-top: 120px;
     text-align: center;
     position: relative;
-    #bg-image {
-      background: url(/img/franchise-owner.jpg) no-repeat center center;
-      background-size: cover !important;   
-      width: 100%;
-    }
     h1 {
+      background: url(/img/franchise-owner.jpg) no-repeat center center;
+      background-size: cover !important;
       position: relative;
-      z-index: 2;
-      top: 300px;
+      padding: 200px 0;
       color: #fff;
       margin: 0;
       span {
@@ -366,11 +366,16 @@ body {
       padding-bottom: 20px;
     }
     img {
-      //padding: 40px 0;
-      float: right;
-      margin-right: 10px;
-      margin-top: 10px;
       height: 50px;
+      clear: both;
+      display: block;
+      margin: 0 auto;
+    }
+    .img span {
+      clear: both;
+      font-size: 50px;
+      display: block;
+      margin: 0 auto;
     }
     h2 {
       color: #fff; 
@@ -383,15 +388,19 @@ body {
       clear: both;
       //margin: 34px 0;
       font-size: 22px;
-      font-weight: 700;
+      //font-weight: 700;
       color: #fff; 
     }
     p {
-      font-size: 16px;
+      display: none;
+      //font-size: 16px;
       color: #fff;
       padding: 0 20px;
       min-height: 115px;
       line-height: 1.2;
+    }
+    span {
+      color: #fff; 
     }
     .owl-theme .owl-controls .owl-page span {
       background: #2ECC71;
