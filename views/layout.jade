@@ -14,6 +14,7 @@ html(lang="en")
     link(rel='stylesheet', href='/js/owl-carousel/owl.carousel.css')
     link(rel='stylesheet', href='/js/owl-carousel/owl.theme.css')
     script(src="/js/jquery.js")
+    script(src="/js/waypoints.min.js")
     script(src="/js/owl-carousel/owl.carousel.js")
 
     block head
@@ -26,9 +27,16 @@ html(lang="en")
     script(src="/js/skrollr.min.js")
     script.
       $(document).ready(function() {
+        $('#benefits').waypoint(function(direction) {
+          if (direction == 'down')
+           $('#scroll-reveal .navbar').addClass('show navbar-fixed-top')
+          if (direction == 'up')
+            $('#scroll-reveal .navbar').removeClass('show navbar-fixed-top')
+        })
+        
         $(".owl-carousel").owlCarousel({singleItem:true});
         var h = $(window).height()
-        $('#home-hd').css('height', h);
+        $('header').css('height', h);
         var s = skrollr.init();
         $('.moving').css('height', h*3)
         $('.moving').css('margin-top', h+'px')
@@ -36,6 +44,6 @@ html(lang="en")
         var w = $(window).width()
         $('#my-container').css('width', w)
         $('#bg-image').css('height', h)
-
+        
       });
 

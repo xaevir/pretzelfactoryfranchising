@@ -5899,9 +5899,6 @@ body {
   margin-bottom: 0;
   padding-top: 9px;
 }
-.navbar .container {
-  max-width: 1070px;
-}
 .navbar .navbar-nav {
   margin-top: 18px;
 }
@@ -5917,7 +5914,6 @@ body {
 .navbar .navbar-brand img {
   display: block;
   width: auto;
-  height: 75px;
   position: relative;
   z-index: 1;
 }
@@ -5936,49 +5932,81 @@ body {
   background-color: #d95253;
   padding: 10px 12px;
   margin-top: 14px;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
   border-radius: 3px;
 }
 .navbar .request-info a:hover {
   background-color: #db002c;
-  color: #fff;
+  color: #fff !important;
 }
-.navbar-fixed-top {
-  background-color: #fff;
-}
-#home-hd.toggle-nav-in-ad .navbar {
+#nav-in-header .navbar {
   box-shadow: none;
 }
-#home-hd.toggle-nav-in-ad .navbar ul li a {
+#nav-in-header .navbar ul li a {
   color: #fff;
   font-size: 16px;
 }
-#home-hd.toggle-nav-in-ad .navbar ul li a:hover {
+#nav-in-header .navbar ul li a:hover {
   background-color: transparent;
   color: #ccc;
+}
+#scroll-reveal .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transform: translateY(-110%);
+  -moz-transform: translateY(-110%);
+  -o-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
+  transform: translateY(-110%);
+  -webkit-transition: -webkit-transform 500ms;
+  -moz-transition: -moz-transform 500ms;
+  -o-transition: -o-transform 500ms;
+  transition: -webkit-transform 500ms, -moz-transform 500ms, -o-transform 500ms, transform 500ms;
+}
+#scroll-reveal .navbar.show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+#scroll-reveal .navbar.show ul li a {
+  color: #006846;
+  font-size: 16px;
+}
+#scroll-reveal .navbar.show ul li a:hover {
+  background-color: transparent;
+  color: #ccc;
+}
+#home h1 {
+  font-size: 46px;
 }
 #home section h1,
 #home section h2,
 #home section h3 {
   text-align: center;
 }
-#home #home-hd {
-  background: url('/img/pretzel-bg.jpg') no-repeat top left;
+#home header {
+  background: url('/img/original-store-dark.jpg') no-repeat top left;
   background-size: cover !important;
   height: 100%;
   position: relative;
 }
-#home #home-hd nav .container {
-  max-width: 100%;
+#home header .wrapper-bg {
+  height: 100%;
+  background: url(/img/dotted-mask-white.png) repeat top left;
 }
-#home h1 {
-  font-size: 46px;
+#home .header-content {
+  position: relative;
+  height: 100%;
 }
 #home #hero {
-  padding: 50px;
-  text-align: center;
   position: absolute;
+  z-index: 3;
   top: 50%;
   width: 100%;
   -webkit-transform: translateY(-50%);
@@ -5986,15 +6014,28 @@ body {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+  text-align: center;
+  margin-top: -50px;
 }
-#home #hero img {
-  height: 450px;
-  margin-top: 50px;
+#home #hero h1 {
+  border: 8px solid #fff;
+  padding: 40px 40px;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+#home #hero h1 span {
+  font-size: 38px;
+  display: block;
+  padding-bottom: 10px;
 }
 #home #benefits {
   text-align: center;
   margin-bottom: 60px;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 #home #benefits h1 {
   margin: 0;
@@ -6013,9 +6054,8 @@ body {
   line-height: 1.5;
 }
 #home #awards {
-  background: url('/img/dog-days-green.jpg') no-repeat top left;
+  background: url('/img/dog-days.jpg') no-repeat top left;
   background-size: cover !important;
-  border-top: 1px solid #40d47e;
   margin-top: 100px;
   margin-bottom: 60px;
   text-align: center;
@@ -6023,6 +6063,8 @@ body {
 }
 #home #awards h1 {
   color: #fff;
+  text-shadow: 2px 1px #000;
+  font-weight: 700;
 }
 #home #awards img {
   height: 70px;
@@ -6032,6 +6074,8 @@ body {
 }
 #home #awards p {
   margin-bottom: 0;
+  text-shadow: 2px 1px #000;
+  color: #000;
 }
 #home #awards .award {
   font-weight: 700;
@@ -6047,10 +6091,10 @@ body {
   margin-bottom: 120px;
 }
 #home #support h2 {
-  color: #fff;
   padding-top: 30px;
   font-size: 34px;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 #home #support .panel-1,
 #home #support .panel-2 {
@@ -6066,30 +6110,23 @@ body {
   color: #34495e;
 }
 #home #support .number-circle {
+  display: none;
   border-radius: 50%;
   font-size: 34px;
   width: 50px;
   height: 50px;
-  background: #fff;
-  color: #3498DB;
+  background: #006846;
+  color: #fff;
   text-align: center;
   margin: 0 auto;
   line-height: 1.5;
 }
 #home #support h4 {
-  margin-top: -10px;
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
 }
-#home #support h4::before {
-  content: url(/img/checkmark.png);
-}
-#home #support h4 b {
-  font-size: 40px;
-}
-#home #support p {
-  color: #fff;
+#home #support h4 img {
+  vertical-align: bottom;
 }
 #home #support .owl-theme .owl-controls .owl-page span {
   background: #fff;
