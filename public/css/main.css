@@ -5785,6 +5785,28 @@ button.close {
   /* Legacy iOS */
 }
 @font-face {
+  font-family: 'berninosans';
+  src: url('/fonts/berninosansLight/berninosansLight.eot');
+  src: url('/fonts/berninosansLight/berninosansLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/berninosansLight/berninosansLight.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/berninosansLight/berninosansLight.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/berninosansLight/berninosansLight.svg#proxima_nova') format('svg');
+  font-weight: 300;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'berninosans';
+  src: url('/fonts/berninosansBold/berninosansBold.eot');
+  src: url('/fonts/berninosansBold/berninosansBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('/fonts/berninosansBold/berninosansBold.woff') format('woff'), /* Modern Browsers */
+   url('/fonts/berninosansBold/berninosansBold.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('/fonts/berninosansBold/berninosansBold.svg#proxima_nova') format('svg');
+  font-weight: 700;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
   font-family: 'aleo';
   src: url('/fonts/aleo/aleoRegular.eot');
   src: url('/fonts/aleo/aleoRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -5999,7 +6021,7 @@ body {
   text-align: center;
 }
 #home header {
-  background: url('/img/original-store-dark.jpg') no-repeat top left;
+  background: url('/img/pretzel-bg.jpg') no-repeat top left;
   background-size: cover !important;
   height: 100%;
   position: relative;
@@ -6025,17 +6047,21 @@ body {
   margin-top: -50px;
 }
 #home #hero h1 {
-  border: 8px solid #fff;
-  padding: 40px 40px;
-  color: #fff;
+  border: 3px solid #006846;
+  padding: 10px 10px;
+  color: #006846;
   display: inline-block;
   margin: 0;
-  font-size: 60px;
-  font-weight: bold;
+  font-family: berninosans;
+  font-size: 50px;
+  font-weight: 700;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 950px;
 }
 #home #hero h1 span {
-  font-size: 38px;
+  font-size: 30px;
+  font-weight: 300;
   display: block;
   padding-bottom: 10px;
 }
