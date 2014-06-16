@@ -1,0 +1,59 @@
+{
+  "steps": [
+    {
+      "name": "Qualification Form",
+      "icon": "checklist",
+      "description": "Fill out our online Franchise Candidate Qualification Form to provide us some information about you."
+    },
+    {
+      "name": "Research",
+      "icon": "research",
+      "description": "Together we will explore the Philly Pretzel Factory business model and answer any question you might have. This will give you an in-depth understanding of the different Philly Pretzel Factory business models and allow us to get to know you, your goals, and your plans for the business."
+    },
+    {
+      "name": "Franchise Disclosure Document",
+      "icon": "fdd",
+      "description": "Once you have completed the research process and have been approved to continue in the process, you will review the Franchise Disclosure Document (FDD). At this point, you will have an opportunity to ask questions about the FDD to ensure you understand its contents."
+    },
+    {
+      "name": "Talk to Franchisees",
+      "icon": "bullhorn",
+      "description": "The next step is a process which allows you to speak directly to franchise owners. These fellow owners become a resource to help you throughout the process and even after you have opened your store."
+    },
+    {
+      "name": "Executive Interview",
+      "icon": "interview",
+      "description": "Visit our Corporate office in Philadelphia to experience the operations side of the business in the Original Philly Pretzel Factory and also spend personal time with our CEO Dan Dizio and President Marty Ferrill."
+    },
+    {
+      "name": "Sign Franchise Agreement",
+      "icon": "sign",
+      "description": "Once we decide you are a good fit for the Philly Pretzel Factory family and you determine the franchise opportunity is the right decision for you, it is time to sign the Franchise Agreement and pay the Franchise Fee. Congratulations, you’re now a Philly Pretzel Factory franchise owner!"
+    },
+    {
+      "name": "Site Selection Process",
+      "icon": "binoculars",
+      "description": "Our Real Estate Department works with you to evaluate prospective locations you like and perform a detailed analysis of the area to locate additional possibilities. Our Real Estate Department will work with the landlord to gather all the details of the potential locations and, together with you, narrow down the choices until you select the final location from the approved location choices."
+    },
+    {
+      "name":" Financing Process",
+      "icon": "financing",
+      "description": "We do not offer any financing ourselves, but will work side by side with you to shepherd you through the financing process with our financing partners or a financing organization of your choice."
+    },
+    {
+      "name": "Construction Process",
+      "icon": "construction",
+      "description": "Our Construction Department will take the lead on getting your Philly Pretzel Factory store ready to open. From working with the architect who draws up the plans, to bidding the process of constructing the build-out, to coordinating the entire process, our Construction Manager will manage every step so you can concentrate on getting ready to grow your business."
+    },
+    {
+      "name": "Training",
+      "icon": "university",
+      "description": "Once we know when the Philly Pretzel Factory store will be ready to open, we will schedule training to ensure you are prepared to open. Training starts with one week training at Pretzel University at our Corporate Office in Philadelphia, followed by a week of onsite training in your location once the store is up and running."
+    },
+    {
+      "name": "Grand Opening",
+      "icon": "balloons",
+      "description": "By far the most exciting step! At this point, you have been working really hard, and it is time to official announce your store to your community. Once your store is open and running, a Grand Opening will be scheduled to kick start the marketing of your Philly Pretzel Factory."
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 @import "bootstrap-3.1.1/less/bootstrap.less";
 //@import "../js/libs/bootstrap/dist/css/bootstrap.css";
 @import "fonts.less";
+@import (inline) "sprite.css";
 //@import "../fonts/icomoon/style.css";
 //@import (less) "../fonts/icons/style.css";
 
@@ -27,6 +28,11 @@
 @gray:         lighten(#000, 33.5%); // #555
 @gray-light:   lighten(#000, 60%);   // #999
 @gray-lighter: lighten(#000, 93.5%); // #eee
+
+
+i[class^='sprite-'] {
+  display: inline-block;
+}
 
 .header {
   margin-bottom: .5em;
@@ -217,6 +223,9 @@ body {
       margin: 0 auto;
       background: rgba(255, 255, 255, .5);
       max-width: 950px;
+      b {
+        font-size: 40px;
+      }
       span {
         font-size: 30px;
         font-weight: 300;
@@ -309,6 +318,9 @@ body {
       margin: 0 auto;
       line-height: 1.5;
     }
+    .sprite-checkmark {
+      vertical-align: bottom;
+    }
     h4 {
       font-size: 18px;
       font-weight: 700;
@@ -345,11 +357,13 @@ body {
   #steps {
     text-align: center;
     position: relative;
+    margin-top: 20px;
     h1 {
       background: url(/img/franchise-owner.jpg) no-repeat center center;
       background-size: cover !important;
       position: relative;
-      padding: 200px 0;
+      padding-top: 300px;
+      padding-bottom: 100px;
       color: #fff;
       margin: 0;
       span {
@@ -358,57 +372,79 @@ body {
         display: inline-block;
       }
     }
-    div[class^='col-sm-'] { 
-      background: #2ECC71;
-      background: @pretzel-green;
-      border: 1px solid #fff;
-      cursor: pointer;
-      &:hover {
-        background: lighten(@pretzel-green, 13.5%);
+    ul {
+      margin-top: 30px;
+    }
+    li {
+      .glyphicon {
+        color: @pretzel-green;
       }
     }
-    .lighter {
-      //background: lighten(#2ECC71, 13.5%) !important;
+    .item-heading {
+      cursor: pointer;
+      &:hover {
+        h2, h3 {
+          color: lighten(@pretzel-green, 13.5%);
+        }
+        .circle {
+          background: lighten(@pretzel-green, 13.5%);
+        }
+      }
     }
-    .content {
-      padding-bottom: 20px;
-    }
-    img {
-      height: 50px;
-      clear: both;
-      display: block;
+    .circle {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background: @pretzel-green;
+      text-align: center;
       margin: 0 auto;
+      line-height: 6;
+      position: relative;
+    }
+    i[class^='sprite-'] {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
     }
     .img span {
       clear: both;
-      font-size: 50px;
+      font-size: 20px;
       display: block;
       margin: 0 auto;
+      color: #121212;
+      color: #121212;
     }
     h2 {
-      color: #fff; 
-      float: left;
+      //color: #fff; 
+      //float: left;
       margin: 0;
       margin: 10px;
-      font-size: 20px;
+      font-size: 40px;
+      color: @pretzel-green;
     }
     h3 {
-      clear: both;
-      //margin: 34px 0;
-      font-size: 22px;
-      //font-weight: 700;
-      color: #fff; 
+      font-size: 24px;
+      color: @pretzel-green;
     }
     p {
-      display: none;
       //font-size: 16px;
-      color: #fff;
       padding: 0 20px;
-      min-height: 115px;
-      line-height: 1.2;
+      font-size: 16px;
+      margin-top: 15px;
     }
-    span {
-      color: #fff; 
+    .owl-item img {
+      width: auto;
+      display: inline;
+    }
+    .owl-dots {
+      margin-top: 15px;
     }
   }
   #request-info {
