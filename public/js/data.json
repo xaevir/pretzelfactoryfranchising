@@ -1,4 +1,25 @@
 {
+  "models": [
+    {
+      "title": "Traditional",
+      "description": "A stand alone store in a shopping center or strip mall",
+      "img": "tradional.jpg",
+      "imgCaption": "@Bensalem shopping center"
+
+    },
+    {
+      "title": "Non Traditional",
+      "description": "At entertainment or trasportation venues like amusements parks, train stations, stadiums",
+      "img": "airport.jpg",
+      "imgCaption": "@Philadelphia Airport"
+    },
+    {
+      "title": "Within a Large Retailer",
+      "description": "At a big box retailer like a walmart where we are currenty rolling out stores",
+      "img": "walmart.jpg",
+      "imgCaption": "@Wilmington Walmart"
+    }
+  ],
   "steps": [
     {
       "name": "Qualification Form",

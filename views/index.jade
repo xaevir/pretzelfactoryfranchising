@@ -38,10 +38,10 @@ block content
               and build sales through store visits and consistent communication.
           .col-sm-4
             i.sprite-growth
-            h3 Proven Concept
+            h3 Proven Growth
             p.
-              Since our first franchise opened nearly 20 years ago, in-stores sales have increased every year.
-              The growth is a testament to our loyal customers who happen to be our best salespeople.
+              45% of franchise owerns own more than one store and 
+              since our first franchise opened nearly 20 years ago, in-stores sales have increased every year.
     section#awards
       .container
         h1
@@ -178,6 +178,16 @@ block content
               <i class="sprite-checkmark"></i>
               Community Involvement
             p A successful business is about more than sales or even good service. It is about people, plain and simple. Our community support program helps you explore ways to give back to your community.
+    section#models
+      .container
+        h1 Our 3 Business Models
+        .row
+          .col-sm-4(ng-repeat="e in pageElements.models")
+            h3 {{e.title}}
+            h4 {{e.description}}
+            img(ng-src="/img/sprites/{{e.img}}")
+            p {{e.imgCaption}}
+
     section#request-info
       h1 request more info
       form(role="form")

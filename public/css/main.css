@@ -6167,6 +6167,9 @@ body {
 #home h1 {
   font-size: 46px;
 }
+#home h3 {
+  font-size: 24px;
+}
 #home section h1,
 #home section h2,
 #home section h3 {
@@ -6413,7 +6416,7 @@ body {
   margin-bottom: 120px;
   padding-bottom: 60px;
   background: #e8e8e8;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 #home #request-info form {
   max-width: 300px;
@@ -6422,6 +6425,33 @@ body {
 #home #request-info h1 {
   font-family: aleo, sans-serif;
   font-weight: 700;
+}
+#home #models {
+  padding-top: 60px;
+  background: #717073;
+  padding-bottom: 80px;
+}
+#home #models .white {
+  color: #fff;
+}
+#home #models h1 {
+  color: #fff;
+}
+#home #models h3 {
+  color: #fff;
+}
+#home #models h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+#home #models img {
+  border: 1px solid #000;
+}
+#home #models p {
+  float: right;
+  color: #fff;
 }
 #alert {
   position: fixed;

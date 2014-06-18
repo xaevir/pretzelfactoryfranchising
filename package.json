@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "franchising site",
   "dependencies": {
-    "gulp": "^3.8.0",
+    "gm": "^1.16.0",
     "jade": "~1.3.1",
     "koa": "~0.6.1",
     "koa-better-body": "0.0.1",
@@ -13,6 +13,7 @@
     "koa-views": "~2.0.3"
   },
   "devDependencies": {
+    "canvas": "^1.1.4",
     "gulp": "^3.7.0",
     "gulp-angular-templatecache": "^1.2.0",
     "gulp-concat": "^2.2.0",

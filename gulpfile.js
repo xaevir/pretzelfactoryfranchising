@@ -28,7 +28,7 @@ gulp.task('ng-template', function () {
 });
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('public/img/icons/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('public/img/sprites/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css',
     imgPath: '/img/sprite.png',
@@ -44,10 +44,19 @@ gulp.task('sprite', function () {
 });
 
 
+gulp.task('jade', function () {
+  gulp.src('views/*.jade')
+    .pipe(livereload());
+
+});
+
 gulp.task('watch', function() {
   gulp.watch('public/css/**/*.less', ['style']);
-  gulp.watch('public/js/templates/**/*.html', ['ng-template']);
-  gulp.watch('public/img/icons/*.png', ['sprite']);
+  //gulp.watch('public/js/templates/**/*.html', ['ng-template']);
+  //gulp.watch('public/img/icons/*.png', ['sprite']);
+  //gulp.watch('views/*.jade', ['jade']);
+  livereload.listen();
+  gulp.watch('views/*').on('change', livereload.changed);
 });
 
 // Default Task
