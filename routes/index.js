@@ -1,8 +1,9 @@
-var app = require('../app')
+'use strict';
+
+var app = require('../app');
 
 app.get('/', function *() {
-  //this.body = 'hello world bobby'
-  yield this.render('index', {id:'home' });
+  yield this.render('index', {id: 'home'});
 });
 
 app.get('/understand-us', function *() {

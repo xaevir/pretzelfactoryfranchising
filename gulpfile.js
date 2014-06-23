@@ -4,9 +4,13 @@ var gulp = require('gulp')
   , less = require('gulp-less')
   , livereload = require('gulp-livereload')
   , util = require('gulp-util')
+  , concat = require('gulp-concat')
   , log = util.log
   , templateCache = require('gulp-angular-templatecache')
-  , spritesmith = require('gulp.spritesmith');
+  , spritesmith = require('gulp.spritesmith')
+  //, ngmin = require('gulp-ngmin')
+  //, uglify = require('gulp-uglify')
+  , jade = require('gulp-jade');
   //, watch = require('gulp-watch')
   //, notify = require('gulp-notify')
 
@@ -20,6 +24,36 @@ gulp.task('style', function () {
     .pipe(livereload());
 });
 
+gulp.task('jade', function() {
+  gulp.src('./testview/*.jade')
+    .pipe(jade({pretty: true, locals: {}}))
+    .pipe(gulp.dest('./testview/'));
+});
+
+
+gulp.task('compress', function() {
+  gulp.src([
+    'public/js/jquery.js',
+    'public/js/angular.js',
+    'public/js/ui-bootstrap-tpls-0.11.0.js',
+    'public/js/waypoints.min.js',
+    'public/js/ng-me.js',
+    'public/js/views/steps.js',
+    'public/js/templates.js',
+    'public/js/owl.carousel/owl.carousel.js'
+  ])
+    .pipe(concat('app.min.js'))
+    .pipe(gulp.dest('public/js'));
+});
+
+
+//gulp.task('preprocesshtml', function() {
+//  gulp.src('./view/*.jade')
+//    .pipe(preprocess({context: { NODE_ENV: 'production', DEBUG: true}})) //To set environment variables in-line
+//    .pipe(gulp.dest('./dist/'))
+//});
+
+
 gulp.task('ng-template', function () {
   log('Generate Angular template files ');
   gulp.src('public/js/templates/**/*.html')
@@ -28,11 +62,11 @@ gulp.task('ng-template', function () {
 });
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('public/img/sprites/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('public/img/sprites/*').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css',
     imgPath: '/img/sprite.png',
-    engine: 'pngsmith',
+    engine: 'gm',
     cssOpts: {
       cssClass: function (item) {
         return '.sprite-' + item.name;
@@ -44,19 +78,13 @@ gulp.task('sprite', function () {
 });
 
 
-gulp.task('jade', function () {
-  gulp.src('views/*.jade')
-    .pipe(livereload());
-
-});
-
 gulp.task('watch', function() {
   gulp.watch('public/css/**/*.less', ['style']);
   //gulp.watch('public/js/templates/**/*.html', ['ng-template']);
   //gulp.watch('public/img/icons/*.png', ['sprite']);
   //gulp.watch('views/*.jade', ['jade']);
-  livereload.listen();
-  gulp.watch('views/*').on('change', livereload.changed);
+  //livereload.listen();
+  //gulp.watch('views/*').on('change', livereload.changed);
 });
 
 // Default Task

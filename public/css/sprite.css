@@ -5,9 +5,15 @@ Icon classes can be used entirely standalone. They are named after their origina
 <i class="icon-home"></i>
 ```
 */
+.sprite-airport {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1854px;
+  width: 360px;
+  height: 260px;
+}
 .sprite-balloons {
   background-image: url(/img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -90px;
   width: 41px;
   height: 45px;
 }
@@ -85,7 +91,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sprite-interview {
   background-image: url(/img/sprite.png);
-  background-position: 0px -90px;
+  background-position: 0px 0px;
   width: 48px;
   height: 45px;
 }
@@ -149,9 +155,21 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 71px;
   height: 71px;
 }
+.sprite-tradional {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1594px;
+  width: 360px;
+  height: 260px;
+}
 .sprite-university {
   background-image: url(/img/sprite.png);
   background-position: 0px -45px;
   width: 48px;
   height: 45px;
+}
+.sprite-walmart {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -2114px;
+  width: 360px;
+  height: 260px;
 }

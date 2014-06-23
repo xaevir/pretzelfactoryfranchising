@@ -187,7 +187,15 @@ block content
             h4 {{e.description}}
             img(ng-src="/img/sprites/{{e.img}}")
             p {{e.imgCaption}}
-
+    section#testimonials
+      .container
+        h1 In the words of our fanchisees
+        .row
+          .col-sm-4(ng-repeat="e in pageElements.testimonials")
+            .photo-wrapper
+              img(ng-src="/img/{{e.photo}}")
+              h2 {{e.name}}
+              p.quote {{e.quote}}
     section#request-info
       h1 request more info
       form(role="form")

@@ -1,4 +1,21 @@
 {
+  "testimonials": [
+    {
+      "name":"Dino Myers-Lamptey",
+      "quote": "Lomo keffiyeh yr, sartorial umami swag Carles next level nostrud asymmetrical aesthetic vegan. Tonx Wes Anderson pickled squid, trust fund hashtag assumenda pariatur Helvetica selfies scenester.",
+      "photo": "ui-face-1.jpg"
+    },
+    {
+      "name":"Christina Clark",
+      "quote": "Bitters ea cillum fashion axe, 90's laborum labore sed you probably haven't heard of them jean shorts adipisicing tattooed deep v gluten-free consectetur.",
+      "photo": "ui-face-2.jpg"
+    },
+    {
+      "name": "Logan Hall",
+      "quote": "Messenger bag Vice artisan, fixie qui whatever sunt fingerstache. Swag narwhal YOLO cupidatat selvage pop-up, ex Kickstarter eu literally crucifix distillery delectus forage.",
+      "photo": "ui-face-3.jpg"
+    }
+  ],
   "models": [
     {
       "title": "Traditional",

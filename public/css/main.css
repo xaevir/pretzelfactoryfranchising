@@ -5,9 +5,15 @@ Icon classes can be used entirely standalone. They are named after their origina
 <i class="icon-home"></i>
 ```
 */
+.sprite-airport {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1854px;
+  width: 360px;
+  height: 260px;
+}
 .sprite-balloons {
   background-image: url(/img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -90px;
   width: 41px;
   height: 45px;
 }
@@ -85,7 +91,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sprite-interview {
   background-image: url(/img/sprite.png);
-  background-position: 0px -90px;
+  background-position: 0px 0px;
   width: 48px;
   height: 45px;
 }
@@ -149,11 +155,23 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 71px;
   height: 71px;
 }
+.sprite-tradional {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1594px;
+  width: 360px;
+  height: 260px;
+}
 .sprite-university {
   background-image: url(/img/sprite.png);
   background-position: 0px -45px;
   width: 48px;
   height: 45px;
+}
+.sprite-walmart {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -2114px;
+  width: 360px;
+  height: 260px;
 }
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -5931,6 +5949,16 @@ button.close {
   }
 }
 @font-face {
+  font-family: 'caslon';
+  src: url('/fonts/caslon/caslonProRegular.eot');
+  src: url('/fonts/caslon/caslonProRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/fonts/caslon/caslonProRegular.woff') format('woff'), /* Modern Browsers */ url('/fonts/caslon/caslonProRegular.ttf') format('truetype'), /* Safari, Android, iOS */ url('/fonts/caslon/caslonProRegular.svg#lane') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
   font-family: 'lane';
   src: url('/fonts/lane/lane.eot');
   src: url('/fonts/lane/lane.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/fonts/lane/lane.woff') format('woff'), /* Modern Browsers */ url('/fonts/lane/lane.ttf') format('truetype'), /* Safari, Android, iOS */ url('/fonts/lane/lane.svg#lane') format('svg');
@@ -6453,6 +6481,125 @@ body {
 #home #models p {
   float: right;
   color: #fff;
+}
+#home #testimonials {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+#home #testimonials img {
+  border-radius: 50%;
+}
+#home #testimonials h1 {
+  font-family: aleo, sans-serif;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
+#home #testimonials p {
+  font-size: 16px;
+  padding: 0 50px;
+}
+#understand header {
+  height: 100%;
+  background: url('/img/understand-us-header.jpg') no-repeat top left;
+  background-size: cover !important;
+  height: 280px;
+}
+#understand header .container {
+  height: 100%;
+  position: relative;
+}
+#understand header .container h1 {
+  position: absolute;
+  bottom: 80px;
+  color: #fff;
+  font-size: 46px;
+  font-family: aleo, sans-serif;
+  font-weight: 700;
+}
+#understand #news-sections .intro-headline {
+  padding-top: 80px;
+  font-size: 30px;
+  font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 80px;
+  text-align: center;
+}
+#understand #news-sections .quote-lg {
+  position: relative;
+  height: 350px;
+}
+#understand #news-sections .quote-lg h3 {
+  font-family: caslon, serif;
+  font-size: 28px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#understand #news-sections .quote-lg .read-more {
+  font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#understand #news-sections .quote-lg .caption {
+  margin-top: 7px;
+}
+#understand #news-sections #origin {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+}
+#understand #news-sections #origin .col-sm-5 {
+  position: relative;
+}
+#understand #news-sections #undercover {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+}
+#understand #news-sections #undercover .caption {
+  float: right;
+}
+#understand #news-sections #undercover .col-sm-7 {
+  text-align: center;
+}
+#understand #news-sections #undercover .col-sm-7 .player {
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+#understand #news-sections #undercover .col-sm-7 a {
+  display: inline-block;
+}
+#understand #news-sections #undercover .col-sm-7 a:after {
+  content: url('/img/player-button.png');
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#understand #news-sections #undercover .col-sm-7 a:hover:after {
+  content: url('/img/player-button-hover.png');
+}
+#understand #news-sections #history {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+}
+#understand #news-sections #map h1 {
+  color: #999;
+  border: 10px dashed #999;
+  padding: 100px;
+  text-align: center;
 }
 #alert {
   position: fixed;
