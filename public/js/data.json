@@ -25,14 +25,14 @@
 
     },
     {
-      "title": "Non Traditional",
+      "title": "Entertainment &amp; Transportation",
       "description": "At entertainment or trasportation venues like amusements parks, train stations, stadiums",
       "img": "airport.jpg",
       "imgCaption": "@Philadelphia Airport"
     },
     {
-      "title": "Within a Large Retailer",
-      "description": "At a big box retailer like a walmart where we are currenty rolling out stores",
+      "title": "Walmart Model",
+      "description": "We are currenty rolling out stores in Walmart",
       "img": "walmart.jpg",
       "imgCaption": "@Wilmington Walmart"
     }
