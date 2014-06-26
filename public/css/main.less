@@ -124,16 +124,17 @@ body {
 }
 
 #nav-in-header .navbar {
+  background: #fff;
   box-shadow: none;
   ul li a {
     //padding-top: 25px;
     //padding-bottom: 25px;
-    color: #fff;
-    font-size: 16px;
-    &:hover {
-      background-color: transparent;
-      color: #ccc;
-    }
+    //color: #fff;
+    //font-size: 16px;
+    //&:hover {
+    //  background-color: transparent;
+    //  color: #ccc;
+    //}
   }
 }
 
@@ -352,7 +353,7 @@ body {
         //content: url(/img/checkmark.png);
       }
       img {
-        vertical-align: bottom; 
+        vertical-align: bottom;
       }
     }
 
@@ -362,18 +363,25 @@ body {
     text-align: center;
     position: relative;
     margin-top: 20px;
+
     h1 {
-      background: url(/img/franchise-owner.jpg) no-repeat center center;
+      //background: url(/img/franchise-owner.jpg) no-repeat center center;
+      background: url(/img/happy-owner.jpg) no-repeat bottom left fixed;
       background-size: cover !important;
       position: relative;
       padding-top: 300px;
       padding-bottom: 100px;
       color: #fff;
       margin: 0;
+      //display: inline-block;
+      //border-radius: 150%;
+      //height: 520px;
+      //width: 780px;
       span {
         border: 5px solid #fff;
         padding: 30px;
         display: inline-block;
+        //display: none;
       }
     }
     ul {
@@ -450,6 +458,45 @@ body {
     .owl-dots {
       margin-top: 15px;
     }
+
+    .owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
+      background: transparent;
+      color: white;
+      text-decoration: none;
+    }
+    .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+      color: white;
+      font-size: 14px;
+      margin: 5px;
+      padding: 4px 7px;
+      background: transparent;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+    }
+
+
+    .owl-theme .owl-controls .owl-nav .prev, 
+    .owl-theme .owl-controls .owl-nav .next {
+      height: 100px;
+      width: 100px;
+      fill: #3498db;
+      position: absolute;
+    }
+
+    .owl-theme .owl-controls .owl-nav .prev {
+      left: -37px;
+      top: 58px;
+    }
+
+    .owl-theme .owl-controls .owl-nav .next {
+      right: -37px;
+      top: 58px;
+
+    }
+
   }
   #request-info {
     margin-bottom: 120px;
@@ -538,18 +585,31 @@ body {
   #news-sections {
     .intro-headline {
       padding-top: 80px;
-      font-size: 30px;
+      font-size:  34px;
       font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 700;
+      font-family: berninosansLight;
+      font-family: lane;
+      font-family: aleoLight;
+      font-family: avenirLight;
+      font-family: lane;
+      font-family: montserrat;
+      font-weight: 300;
       margin-bottom: 80px;
       text-align: center;
     }
-    .quote-lg {
+    .quote {
       position: relative;
       height: 350px;
       h3 {
         font-family: caslon, serif;
-        font-size: 28px;
+        //font-family: baskerville, serif;
+        color: #444;
+        //font-family: berninosansLight;
+        //font-family: lane;
+        //font-family: aleoLight;
+        //font-family: montserrat;
+        //font-family: avenirLight;
+        font-size: 24px;
         position: absolute;
         margin: 0;
         top: 50%;
@@ -562,6 +622,7 @@ body {
       }
       .read-more {
         font-family: proximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
       }
       .caption {
         margin-top: 7px;
@@ -615,12 +676,195 @@ body {
       border-bottom: 1px solid #ccc;
     }
     #map {
-      h1 {
-        color: #999;
-        border: 10px dashed #999;
-        padding: 100px;
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+      .headers {
+        position: relative;
+      }
+      h3 {
         text-align: center;
-      } 
+        position: absolute;
+        font-size: 34px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+      }
+
+      @-webkit-keyframes pa {
+         0% { fill: @pretzel-green; }
+         08% { fill: @pretzel-green; }
+         98% { fill: @pretzel-green; }
+         100% { fill: #1abc9c; }
+      }
+      @-webkit-keyframes de {
+         0% { fill: #1abc9c; }
+         10% { fill: #1abc9c; }
+         12% { fill: @pretzel-green; }
+         98% { fill: @pretzel-green; }
+         100% { fill: #1abc9c; }
+      }
+
+      @-webkit-keyframes nj {
+         0% { fill: #1abc9c; }
+         10% { fill: #1abc9c; }
+         20% { fill: #1abc9c; }
+         22% { fill: @pretzel-green; }
+         98% { fill: @pretzel-green; }
+         100% { fill: #1abc9c; }
+      }
+      @-webkit-keyframes md {
+         0% { fill: #1abc9c; }
+         20% { fill: #1abc9c; }
+         30% { fill: #1abc9c; }
+         32% { fill: @pretzel-green; }
+         98% { fill: @pretzel-green; }
+         100% { fill: #1abc9c; }
+      }
+      @-webkit-keyframes ny {
+         0% { fill: #1abc9c; }
+         30% { fill: #1abc9c; }
+         40% { fill: #1abc9c; }
+         42% { fill: @pretzel-green; }
+         98% { fill: @pretzel-green; }
+         100% { fill: #1abc9c; }
+      }
+
+
+      #PA {
+        -webkit-animation: pa 25s ease infinite;
+      }
+
+      #DE {
+        -webkit-animation: de 25s ease infinite;
+      }
+      #NJ {
+        -webkit-animation: nj 25s ease infinite;
+      }
+      #MD {
+        -webkit-animation: md 25s ease infinite;
+      }
+      #NY {
+        -webkit-animation: ny 25s ease infinite;
+      }
+
+
+
+      @-webkit-keyframes first {
+         0% { opacity: 1; }
+         08% { opacity: 1; }
+         10% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes second {
+         0% { opacity: 0; }
+         10% { opacity: 0; }
+         12% { opacity: 1; }
+         18% { opacity: 1; }
+         20% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes third {
+         0% { opacity: 0; }
+         20% { opacity: 0; }
+         22% { opacity: 1; }
+         28% { opacity: 1; }
+         30% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes fourth {
+         0% { opacity: 0; }
+         30% { opacity: 0; }
+         32% { opacity: 1; }
+         38% { opacity: 1; }
+         40% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes fifth {
+         0% { opacity: 0; }
+         40% { opacity: 0; }
+         42% { opacity: 1; }
+         48% { opacity: 1; }
+         50% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes sixth {
+         0% { opacity: 0; }
+         50% { opacity: 0; }
+         52% { opacity: 1; }
+         58% { opacity: 1; }
+         60% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes seventh {
+         0% { opacity: 0; }
+         60% { opacity: 0; }
+         62% { opacity: 1; }
+         68% { opacity: 1; }
+         70% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes eighth {
+         0% { opacity: 0; }
+         70% { opacity: 0; }
+         72% { opacity: 1; }
+         78% { opacity: 1; }
+         80% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes ninth {
+         0% { opacity: 0; }
+         80% { opacity: 0; }
+         82% { opacity: 1; }
+         88% { opacity: 1; }
+         90% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+      @-webkit-keyframes tenth {
+         0% { opacity: 0; }
+         90% { opacity: 0; }
+         92% { opacity: 1; }
+         98% { opacity: 1; }
+         100% { opacity: 0; }
+         100% { opacity: 0; }
+      }
+
+
+
+      #title_1 {
+        -webkit-animation: first 25s ease infinite;
+      }
+      #title_2 {
+        -webkit-animation: second 25s ease infinite;
+      }
+      #title_3 {
+        -webkit-animation: third 25s ease infinite;
+      }
+      #title_4 {
+        -webkit-animation: fourth 25s ease infinite;
+      }
+      #title_5 {
+        -webkit-animation: fifth 25s ease infinite;
+      }
+      #title_6 {
+        -webkit-animation: sixth 25s ease infinite;
+      }
+      #title_7 {
+        -webkit-animation: seventh 25s ease infinite;
+      }
+      #title_8 {
+        -webkit-animation: eighth 25s ease infinite;
+      }
+      #title_9 {
+        -webkit-animation: ninth 25s ease infinite;
+      }
+      #title_10 {
+        -webkit-animation: tenth 25s ease infinite;
+      }
+
+
     }
   }
 }

@@ -31,7 +31,9 @@ angular.module('pretzelApp.Steps', ['ui.bootstrap.collapse'])
       link : function (scope, element) {
         console.log('got to Steps link');
         scope.$on('LastElem', function(event){
-          element.owlCarousel();
+          var prev = '<img class="prev" src="/img/arrow-backward.svg" />'
+          var next = '<img class="next" src="/img/arrow-forward.svg" />'
+          element.owlCarousel({nav: true, navText: [prev, next]});
           //$(element).children().css('border','5px solid blue');
         });
       }
