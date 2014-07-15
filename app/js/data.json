@@ -18,10 +18,10 @@
   ],
   "models": [
     {
-      "title": "Traditional",
-      "description": "A stand alone store in a shopping center or strip mall",
+      "title": "Traditional Bakery",
+      "description": "It can be a stand alone, in a shopping center or strip mall",
       "img": "tradional.jpg",
-      "imgCaption": "@Bensalem shopping center"
+      "imgCaption": "@May Fair"
 
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "title": "Walmart Model",
-      "description": "After and exclusing agreement, we are currenty rolling out stores in Walmarts",
+      "description": "After and exclusive agreement, we are currenty rolling out stores in Walmarts",
       "img": "walmart.jpg",
       "imgCaption": "@Wilmington Walmart"
     }

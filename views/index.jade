@@ -128,10 +128,8 @@ block content
               Inclusion on our website
             p We maximize the exposure of our website through consistent search engine optimization to bring new customers to our corporate website and drive them through your doors for increased sales.
     section#steps
-      h1
-        span The Steps to Being a Happy Owner
-      .h1-me
-        span The Steps to Being a Happy Owner
+      img(src="/img/franchise-owner-circle.jpg")
+      h1 The Steps to Being a Happy Owner
       .container
         div(steps="pageElements.steps")
     section#more-support
@@ -200,9 +198,16 @@ block content
               p.quote {{e.quote}}
     section#request-info
       h1 request more info
-      form(role="form")
-        .form-group
-          input.form-control.input-lg(type="text", name="name", placeholder="NAME")
-        .form-group
-          input.form-control.input-lg(type="email", name="email", placeholder="EMAIL")
+      form(role="form" name="requestForm" novalidate rc-submit="sendData(data)" ng-controller="requestFormCtrl")
+        .form-group(ng-class="form.classStatus('name')")
+          input.form-control.input-lg(type="text" name="name" placeholder="NAME" required ng-model="data.name")
+          .help-block(ng-if="form.interactedWith('name')", ng-messages="requestForm.name.$error")
+            div(ng-message="required") Please enter a name
+
+        .form-group(ng-class="form.classStatus('email')")
+          input.form-control.input-lg(type="email", name="email", placeholder="EMAIL", required ng-model="data.email")
+          .help-block(ng-if="form.interactedWith('email')", ng-messages="requestForm.email.$error")
+            div(ng-message="required") Please enter an email
+            div(ng-message="email") Please enter a valid email
+
         button.btn.btn-success.btn-lg.btn-block(type="submit") GET MORE INFO

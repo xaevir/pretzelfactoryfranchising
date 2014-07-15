@@ -3,12 +3,18 @@ var koa = require('koa'),
     router = require('koa-router'),
     app = module.exports = koa(),
     serve = require('koa-static'),
-    betterBody = require('koa-better-body'),
     views = require('koa-views');
 
+/**
+ * Environment.
+ */
+
+var env = process.env.NODE_ENV || 'development';
+
+if ('test' !== env) app.use(logger());
+
 app.use(logger());
-app.use(serve(__dirname + '/public'));
-app.use(betterBody({patchNode: false, jsonLimit: '1kb', formLimit: '1kb'}));
+app.use(serve(__dirname + '/app'));
 app.use(views('views', { default: 'jade'}));
 
 app.use(router(app));

@@ -10,7 +10,8 @@ var gulp = require('gulp')
   , spritesmith = require('gulp.spritesmith')
   //, ngmin = require('gulp-ngmin')
   //, uglify = require('gulp-uglify')
-  , jade = require('gulp-jade');
+  , jade = require('gulp-jade')
+  , plumber = require('gulp-plumber');
   //, watch = require('gulp-watch')
   //, notify = require('gulp-notify')
 
@@ -18,10 +19,10 @@ var gulp = require('gulp')
 // change css to styles becasue have less in there
 gulp.task('style', function () {
   log('Generate CSS files ' + (new Date()).toString());
-  gulp.src('public/css/main.less')
+  gulp.src('app/css/main.less')
+     .pipe(plumber())
     .pipe(less())
-    .pipe(gulp.dest('./public/css'))
-    .pipe(livereload());
+    .pipe(gulp.dest('app/css'));
 });
 
 gulp.task('jade', function() {
@@ -33,14 +34,14 @@ gulp.task('jade', function() {
 
 gulp.task('compress', function() {
   gulp.src([
-    'public/js/jquery.js',
-    'public/js/angular.js',
-    'public/js/ui-bootstrap-tpls-0.11.0.js',
-    'public/js/waypoints.min.js',
-    'public/js/ng-me.js',
-    'public/js/views/steps.js',
-    'public/js/templates.js',
-    'public/js/owl.carousel/owl.carousel.js'
+    'app/js/jquery.js',
+    'app/js/angular.js',
+    'app/js/ui-bootstrap-tpls-0.11.0.js',
+    'app/js/waypoints.min.js',
+    'app/js/ng-me.js',
+    'app/js/views/steps.js',
+    'app/js/templates.js',
+    'app/js/owl.carousel/owl.carousel.js'
   ])
     .pipe(concat('app.min.js'))
     .pipe(gulp.dest('public/js'));
@@ -56,13 +57,13 @@ gulp.task('compress', function() {
 
 gulp.task('ng-template', function () {
   log('Generate Angular template files ');
-  gulp.src('public/js/templates/**/*.html')
+  gulp.src('app/js/templates/**/*.html')
     .pipe(templateCache({module: 'pretzelApp', root: '/js/templates'}))
-    .pipe(gulp.dest('public/js'));
+    .pipe(gulp.dest('app/js'));
 });
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('public/img/sprites/*').pipe(spritesmith({
+  var spriteData = gulp.src('app/img/sprites/*').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css',
     imgPath: '/img/sprite.png',
@@ -73,18 +74,18 @@ gulp.task('sprite', function () {
       }
     }
   }));
-  spriteData.img.pipe(gulp.dest('public/img/'));
-  spriteData.css.pipe(gulp.dest('public/css/'));
+  spriteData.img.pipe(gulp.dest('app/img/'));
+  spriteData.css.pipe(gulp.dest('app/css/'));
 });
 
 
 gulp.task('watch', function() {
-  gulp.watch('public/css/**/*.less', ['style']);
+  livereload.listen();
+  gulp.watch('app/css/**/*.less', ['style']).on('change', livereload.changed);
+  //gulp.watch('views/*').on('change', livereload.changed);
   //gulp.watch('public/js/templates/**/*.html', ['ng-template']);
   //gulp.watch('public/img/icons/*.png', ['sprite']);
   //gulp.watch('views/*.jade', ['jade']);
-  //livereload.listen();
-  //gulp.watch('views/*').on('change', livereload.changed);
 });
 
 // Default Task
