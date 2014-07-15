@@ -35,8 +35,7 @@ app.post('/request-info', koaBody(), function *() {
 
   var mailOptions = {
     from: 'Pretzel Factory Lead <lead@pretzelfactoryfranchising.com>',
-    //to: 'phillypretzelfactory@franconnect.com',
-    to: 'bobby.chambers33@gmail.com',
+    to: 'phillypretzelfactory@franconnect.com',
     bcc: 'bobby.chambers33@gmail.com',
     subject: 'Pretzel Factory Franchise Lead',
     text: 'name: ' + this.request.body.name + '\n' +
