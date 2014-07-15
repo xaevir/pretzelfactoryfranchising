@@ -1,0 +1,23 @@
+{
+  "name": "pretzel factory",
+  "version": "0.0.0",
+  "homepage": "http://pretzelfactoryfranchising.com",
+  "authors": [
+    "bobby <xaevir@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "ui.bootstrap": "https://github.com/angular-ui/bootstrap-bower.git#~0.11.0",
+    "lodash": "~2.4.1",
+    "owl.carousel": "*",
+    "angular": "1.3.x",
+    "angular-animate": "~1.3.x",
+    "angular-messages": "~1.3.x",
+    "angular-route": "~1.3.x",
+    "jquery": "1.9.x",
+    "greensock": "1.12.x",
+    "angular-strap": "2.0.x",
+    "jquery-waypoints": "~2.0.5"
+  }
+}
