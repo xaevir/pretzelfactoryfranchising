@@ -30,6 +30,7 @@ html(ng-app="pretzelApp")
     script(src="/bower_components/multiline/browser.js")
     script(src="/bower_components/snap.svg/dist/snap.svg-min.js")
     script(src="/bower_components/greensock/src/minified/TweenMax.min.js")
+    script(src="/css/bootstrap-3.1.1/js/collapse.js")
 
     //script(src="/js/app.min.js")
 
@@ -43,12 +44,16 @@ html(ng-app="pretzelApp")
     script.
       $(document).ready(function() {
         //$('.owl-carousel').owlCarousel({dotsEach: true});
-        $('#benefits').waypoint(function(direction) {
-          if (direction == 'down')
-           $('#scroll-reveal .navbar').addClass('show navbar-fixed-top')
-          if (direction == 'up')
-            $('#scroll-reveal .navbar').removeClass('show navbar-fixed-top')
-        })
+          if ($('window').width() < 600) {
+           $('#benefits').waypoint(function(direction) {
+            if (direction == 'down')
+             $('#scroll-reveal .navbar').addClass('show navbar-fixed-top')
+            if (direction == 'up')
+              $('#scroll-reveal .navbar').removeClass('show navbar-fixed-top')
+          })
+         
+          
+        }
 
         $(".scroll-down").click(function() {
           $('html, body').animate({'scrollTop': $('#request-info').offset().top}, 2000);

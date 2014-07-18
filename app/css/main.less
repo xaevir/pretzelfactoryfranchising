@@ -223,7 +223,6 @@ body {
     text-align: center;
     margin-top: -50px;
     h1 {
-      //border: 3px solid @pretzel-green;
       padding: 20px 20px;
       color: @pretzel-green;
       color: #000;
@@ -233,21 +232,26 @@ body {
       font-size: 50px;
       font-weight: 700;
       margin: 0 auto;
-      //background: rgba(255, 255, 255, .8);
       max-width: 950px;
       font-family: aleo, sans-serif; 
       font-weight: 700;
-      font-size: 70px;
+      font-size: 20px;
       color: hsla(0,0,100, .7);
-
+      @media (min-width: @screen-sm-min) { //768 -> up
+        font-size: 70px;
+      }
       b {
         font-size: 40px;
       }
       span {
-        font-size: 30px;
+        font-size: 16px;
         font-weight: 300;
         display: block;
         padding-bottom: 10px;
+        @media (min-width: @screen-sm-min) { //768 -> up
+          font-size: 30px;
+        }
+
       }
     }
   }
@@ -1014,7 +1018,7 @@ footer {
 #arrows path {
 	stroke: #fff;
 	fill: transparent;
-	stroke-width: 6px;	
+	stroke-width: 2px;	
 }
 
 

@@ -6833,17 +6833,27 @@ fieldset[disabled] .navbar .request-info button.active {
   max-width: 950px;
   font-family: aleo, sans-serif;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
+}
+@media (min-width: 768px) {
+  #home #hero h1 {
+    font-size: 70px;
+  }
 }
 #home #hero h1 b {
   font-size: 40px;
 }
 #home #hero h1 span {
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 300;
   display: block;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #home #hero h1 span {
+    font-size: 30px;
+  }
 }
 #home #benefits {
   text-align: center;
@@ -7741,7 +7751,7 @@ footer .copyright {
 #arrows path {
   stroke: #fff;
   fill: transparent;
-  stroke-width: 6px;
+  stroke-width: 2px;
 }
 #request-info-slide-in {
   background-color: #29333a;
