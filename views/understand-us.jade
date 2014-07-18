@@ -3,44 +3,56 @@ extends layout
 block content
   header
     .container
-      h1 Get to understand us a little better
+      h1 Get to Know Us Better
   #news-sections
     section#origin
       .container
         .row
-          h2.intro-headline It all began on a philadelphia street corner at the age of 11
+          h2.intro-headline It All Began on a Philadelphia Street Corner at the age of 11...
           .col-sm-7
             img(src="/img/origin.jpg")
             p.caption  Daniel DiZio, left, and Len Lehman
-          .col-sm-5
+          .col-sm-4
             .quote
-              h3 Daniel DiZio started in the business when he was 11, selling pretzels five for a dollar on street corners. And then he and his partner discovered a machine in Florida... 
-                a.read-more(href="http://www.franchisetimes.com/February-2014/Soft-Landing/") read story
+              .quote-inner
+                h4 Daniel DiZio started in the business when he was 11
+                h3 selling pretzels five for a dollar on street corners. And then he and his partner discovered a machine in Florida... 
+                  a.read-more(href="http://www.franchisetimes.com/February-2014/Soft-Landing/") read story
+    hr
     section#undercover
       .container
         .row
-          h2.intro-headline The CBS show Undercover Boss featured our founder
-          .col-sm-5
+          .col-sm-7.col-sm-offset-5
+            h2.intro-headline The CBS Show Undercover Boss Featured our Founder...
+        .row
+          .col-sm-4.col-sm-offset-1
             .quote
-              h3 I thought that because I was a founder of the company, and that I had twisted pretzels, that I would never forget all that," he told AOL Jobs. "You don't want to become that CEO that's out of touch. But I lost perspective... 
-                a.read-more(href="http://jobs.aol.com/articles/2012/04/28/undercover-boss-pretzel-ceo-in-a-twist-over-working-conditio/") read story
+              .quote-inner
+                h4 I thought that because I was a founder
+                h3 of the company, and that I had twisted pretzels, that I would never forget all that," he told AOL Jobs. "You don't want to become that CEO that's out of touch. But I lost perspective... 
+                  a.read-more(href="http://jobs.aol.com/articles/2012/04/28/undercover-boss-pretzel-ceo-in-a-twist-over-working-conditio/") read story
           .col-sm-7
             .player
               a(href="https://www.youtube.com/watch?v=6ucS4dygaJc")
                 img(src="/img/undercover-boss.jpg")
               p.caption Daniel DiZio undercover and Marcus
+    hr
     section#history
       .container
         .row
-          h2.intro-headline Pretzels are the holy grail to Philadelphians
+          .col-sm-7
+            h2.intro-headline Pretzels are the Holy Grail of Food to Philadelphians...
+        .row
           .col-sm-7
             img(src="img/history.jpg")
             p.caption City of Philadelphia, Dept of Records
           .col-sm-5
             .quote
-              h3 Philadelphia has made its way into similar culinary fame, not only for cheese steaks and water ice (characteristically known as &quot;wudder ice&quot; by the locals), but also for the delicious, chewy, salty, &quot;get-em just about everywhere in Philly,&quot; soft twisted pretzels... 
+              .quote-inner
+              h4 Philadelphia has made its way into similar
+              h3 culinary fame, not only for cheese steaks and water ice (characteristically known as &quot;wudder ice&quot; by the locals), but also for the delicious, chewy, salty, &quot;get-em just about everywhere in Philly,&quot; soft twisted pretzels... 
                 a.read-more(href="http://www.phillyhistory.org/blog/index.php/2007/08/soft-pretzels-a-philadelphia-culinary-tradition/") read story
-    section#map
+    //section#map
       .container
         h2.intro-headline Our Locations
         .headers

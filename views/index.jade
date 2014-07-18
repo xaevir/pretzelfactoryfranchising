@@ -16,7 +16,12 @@ block content
       .header-content
         #hero
           h1 PHILLY PRETZEL FACTORY FRANCHISING
-            span The simplicity of the pretzel with support that feels like family
+            span The simplicity of a great pretzel combined with support that feels like family
+      svg#arrows(down-arrows)
+        path#a1(d='M0 0 L30 32 L60 0')
+        path#a2(d='M0 20 L30 52 L60 20')
+        path#a3(d='M0 40 L30 72 L60 40')
+
   #home-body
     section#benefits
       .container
@@ -24,28 +29,28 @@ block content
         .row
           .col-sm-4
             i.sprite-menu
-            h3 Limited Menu
+            h3 Simple Menu
             p.
               We offer hot pretzels out of the oven and a few other products such as
               pretzel dogs and pepperoni pretzels. We make it as easy as possible to run our system so we
               we keep our product line limited.
           .col-sm-4
             i.sprite-support
-            h3 Great Support
+            h3 Solid Support
             p.
-              We focus every day on providing unmatched franchise support, including access to our 
-              Franchise Support Managers who routinely work with you to maintain operation efficiency 
-              and build sales through store visits and consistent communication.
+              We focus on providing unmatched franchise support through our Franchise Support Managers who 
+              work with you to maintain operation efficiency and build sales through store visits and consistent 
+              communication.
           .col-sm-4
             i.sprite-growth
             h3 Proven Growth
             p.
-              45% of franchise owerns own more than one store and 
-              since our first franchise opened nearly 20 years ago, in-stores sales have increased every year.
+              Since our first franchise opened nearly 20 years ago, in-stores sales
+              have continued to grow. In fact, 45% of franchise owners own multiple stores.
     section#awards
       .container
         h1
-          span As a leader in the franchising industry we have won many awards over the years
+          span A leader in the franchising industry with the accolades to prove it.
         .row
           .col-sm-1
             i.sprite-franchise-magazine
@@ -90,11 +95,11 @@ block content
             h4.
               <i class="sprite-checkmark"></i>
               Comprehensive Training
-            p Our comprehensive training program provides extensive class-room instruction and hands-on training in our corporate office followed by on-site training when you open your Philly Pretzel Factory.
+            p Our comprehensive training program provides extensive classroom instruction and hands-on training in our corporate office followed by on-site training when you open your Philly Pretzel Factory.
           .col-sm-3
             h4.
               <i class="sprite-checkmark"></i>
-              On-line Pre-Opening Checklist
+              Online Pre-Opening Checklist
             p One of the reasons our franchisees get off to such a quick start is they can monitor all pre-opening tasks on-line which insures you build your business quickly.
           .col-sm-3
             h4.
@@ -110,26 +115,26 @@ block content
           .col-sm-3
             h4.
               <i class="sprite-checkmark"></i>
-              On-site Store Opening Support
+              Onsite Store Opening Support
             p You will receive a week of onsite support when you open your store to make the launch of your new Philly Pretzel Factory run smoothly.
           .col-sm-3
             h4.
               <i class="sprite-checkmark"></i>
               Access to Operations Manual
-            p Our comprehensive operations manual allows easy access to descriptions and detailed instructions of every aspect of our Philly Pretzel Factory business model, all available on-line for reference at a touch of a button.
+            p Our comprehensive operations manual allows easy access to descriptions and detailed instructions of every aspect of our Philly Pretzel Factory business model, all available online for reference at a touch of a button.
           .col-sm-3
             h4.
               <i class="sprite-checkmark"></i>
               Access to Marketing Manual
-            p Our industry leading marketing manual walks you through step-by-step instructions on the many proven methods of marketing your Philly Pretzel Factory for building revenue growth and generating profits.
+            p Our industry-leading marketing manual walks you step-by-step through proven Philly Pretzel Factory marketing methods to help you build revenue and generate profits.
           .col-sm-3
             h4.
               <i class="sprite-checkmark"></i>
-              Inclusion on our website
+              Inclusion on Our Website
             p We maximize the exposure of our website through consistent search engine optimization to bring new customers to our corporate website and drive them through your doors for increased sales.
     section#steps
       img(src="/img/franchise-owner-circle.jpg")
-      h1 The Steps to Being a Happy Owner
+      h1 Steps to Becoming a Philly Pretzel Factory Owner
       .container
         div(steps="pageElements.steps")
     section#more-support
@@ -156,7 +161,7 @@ block content
             h4.
               <i class="sprite-checkmark"></i>
               Mystery Shops
-            p You will receive valuable reports on a regular basis as a result of mystery shop visits to your Philly Pretzel Factory that will prove to be invaluable tools in running your business.
+            p Receive valuable reports from mystery shop visits to your Philly Pretzel Factory. This information will help you measure customer service, product quality, and the customer experience.
         .row
           .col-sm-3
             h4.
@@ -187,7 +192,7 @@ block content
             h4 {{e.description}}
             img(ng-src="/img/sprites/{{e.img}}")
             p {{e.imgCaption}}
-    section#testimonials
+    //section#testimonials
       .container
         h1 In the words of our fanchisees
         .row
@@ -197,7 +202,7 @@ block content
               h2 {{e.name}}
               p.quote {{e.quote}}
     section#request-info
-      h1 request more info
+      h1 Request More Info
       form(role="form" name="requestForm" novalidate rc-submit="sendData(data)" ng-controller="requestFormCtrl")
         .form-group(ng-class="form.classStatus('name')")
           input.form-control.input-lg(type="text" name="name" placeholder="NAME" required ng-model="data.name")

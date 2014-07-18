@@ -35,7 +35,7 @@ angular.module('pretzelApp.Steps', ['ui.bootstrap.collapse'])
                                     '</svg>');
           element.owlCarousel({nav: true, navText: [
             compiled({'classname': 'prev'}), 
-            compiled({'classname': 'prev'})
+            compiled({'classname': 'next'})
           ]});
         });
       }

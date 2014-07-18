@@ -11,6 +11,7 @@ var app = require('../index'),
     sendMail = thunkify(smtpTransport.sendMail);
 
 app.get('/', function *() {
+  console.log()
   yield this.render('index', {id: 'home'});
 });
 

@@ -21,12 +21,15 @@ html(ng-app="pretzelApp")
     script(src="/js/waypoints.min.js")
     script(src="/js/components/submit.js")
     script(src="/js/ng-me.js")
+    script(src="/js/directives.js")
     script(src="/js/components/steps.js")
     script(src="/js/templates.js")
     script(src="/js/owl.carousel/owl.carousel.js")
     script(src="/js/angular-strap.min.js")
-    //script(src="/js/angular-strap.tpl.min.js")
     script(src="/bower_components/lodash/dist/lodash.min.js")
+    script(src="/bower_components/multiline/browser.js")
+    script(src="/bower_components/snap.svg/dist/snap.svg-min.js")
+    script(src="/bower_components/greensock/src/minified/TweenMax.min.js")
 
     //script(src="/js/app.min.js")
 
@@ -36,7 +39,7 @@ html(ng-app="pretzelApp")
     block nav
       include nav
     block content
-    //include footer
+    include footer
     script.
       $(document).ready(function() {
         //$('.owl-carousel').owlCarousel({dotsEach: true});
