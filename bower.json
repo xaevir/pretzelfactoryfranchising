@@ -19,6 +19,7 @@
     "angular-strap": "2.0.x",
     "jquery-waypoints": "~2.0.5",
     "angular-ui": "~0.4.0",
-    "bezier-easing": "https://github.com/gre/bezier-easing.git"
+    "bezier-easing": "https://github.com/gre/bezier-easing.git",
+    "multiline": "~0.3.4"
   }
 }
