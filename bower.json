@@ -20,6 +20,7 @@
     "jquery-waypoints": "~2.0.5",
     "angular-ui": "~0.4.0",
     "bezier-easing": "https://github.com/gre/bezier-easing.git",
-    "multiline": "~0.3.4"
+    "multiline": "~0.3.4",
+    "snap.svg": "~0.3.0"
   }
 }
