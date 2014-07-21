@@ -11,7 +11,7 @@ var app = require('../index'),
     sendMail = thunkify(smtpTransport.sendMail);
 
 app.get('/', function *() {
-  console.log()
+  console.log();
   yield this.render('index', {id: 'home'});
 });
 
@@ -40,7 +40,8 @@ app.post('/request-info', koaBody(), function *() {
     bcc: 'bobby.chambers33@gmail.com',
     subject: 'Pretzel Factory Franchise Lead',
     text: 'name: ' + this.request.body.name + '\n' +
-          'email: ' + this.request.body.email
+          'email: ' + this.request.body.email + '\n' +
+          'url-of-form: http://ownappf.com'
   };
 
   var response = yield sendMail(mailOptions);
