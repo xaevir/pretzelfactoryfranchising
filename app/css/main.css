@@ -7073,7 +7073,6 @@ fieldset[disabled] .navbar .request-info button.active {
   height: 75px;
   width: auto;
   fill: #006846;
-  position: absolute;
 }
 #home #steps .owl-theme .owl-controls .owl-nav .prev {
   left: -37px;
