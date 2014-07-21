@@ -21,7 +21,7 @@
       "title": "Traditional Bakery",
       "description": "It can be a stand alone, in a shopping center or strip mall",
       "img": "tradional.jpg",
-      "imgCaption": "@MayFair"
+      "imgCaption": "@Mayfair"
 
     },
     {
@@ -34,7 +34,7 @@
       "title": "Walmart Model",
       "description": "After and exclusive agreement, we are currenty rolling out stores in Walmarts",
       "img": "walmart.jpg",
-      "imgCaption": "@Wilmington Walmart"
+      "imgCaption": "@Beaver Falls Walmart"
     }
   ],
   "steps": [
@@ -61,7 +61,7 @@
     {
       "name": "Executive Interview",
       "icon": "interview",
-      "description": "Visit our Corporate office in Philadelphia to experience the operations side of the business in the Original Philly Pretzel Factory and also spend personal time with our CEO Dan Dizio and President Marty Ferrill."
+      "description": "Visit our Corporate office in Philadelphia to experience the operations side of the business in the Original Philly Pretzel Factory."
     },
     {
       "name": "Sign Franchise Agreement",
