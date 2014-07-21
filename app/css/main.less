@@ -508,7 +508,6 @@ body {
     .owl-theme .owl-controls .owl-nav .prev, 
     .owl-theme .owl-controls .owl-nav .next {
       height: 75px;
-      width: auto;
       fill: @pretzel-green;
     }
 
@@ -1002,7 +1001,7 @@ footer {
 #arrows path {
 	stroke: #fff;
 	fill: transparent;
-	stroke-width: 2px;	
+	stroke-width: 1px;	
 }
 
 
@@ -1033,4 +1032,30 @@ footer {
 #understand #request-info {
   background: hsl(0,0%,83%);
 
+}
+
+.circle-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 51px;
+  height: 51px;
+  bottom: 20px;
+  //border: 2px solid rgba(255,255,255,0.4);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  transition: border-color 200ms ease-in-out;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    margin: auto;
+    polygon {
+      fill: #fff;
+    }
+  }
 }

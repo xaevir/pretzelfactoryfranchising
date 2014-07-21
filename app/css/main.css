@@ -7071,7 +7071,6 @@ fieldset[disabled] .navbar .request-info button.active {
 #home #steps .owl-theme .owl-controls .owl-nav .prev,
 #home #steps .owl-theme .owl-controls .owl-nav .next {
   height: 75px;
-  width: auto;
   fill: #006846;
 }
 #home #steps .owl-theme .owl-controls .owl-nav .prev {
@@ -7738,7 +7737,7 @@ footer .copyright {
 #arrows path {
   stroke: #fff;
   fill: transparent;
-  stroke-width: 2px;
+  stroke-width: 1px;
 }
 #request-info-slide-in {
   background-color: #29333a;
@@ -7760,4 +7759,28 @@ footer .copyright {
 }
 #understand #request-info {
   background: #d4d4d4;
+}
+.circle-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 51px;
+  height: 51px;
+  bottom: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  transition: border-color 200ms ease-in-out;
+}
+.circle-button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  margin: auto;
+}
+.circle-button svg polygon {
+  fill: #fff;
 }
