@@ -6838,7 +6838,7 @@ fieldset[disabled] .navbar .request-info button.active {
 }
 @media (min-width: 768px) {
   #home #hero h1 {
-    font-size: 70px;
+    font-size: 68px;
   }
 }
 #home #hero h1 b {
@@ -6907,26 +6907,16 @@ fieldset[disabled] .navbar .request-info button.active {
   font-size: 13px;
 }
 #home #support {
-  background: #3c4952;
   padding-top: 60px;
   padding-bottom: 120px;
   padding-top: 120px;
-}
-#home #support h1 {
-  color: #fff;
-}
-#home #support h3 {
-  color: #fff;
-}
-#home #support p {
-  color: #Fff;
+  border-bottom: 1px solid #333;
 }
 #home #support h2 {
   padding-top: 30px;
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #fff;
 }
 #home #support .number-circle {
   display: none;
@@ -6942,26 +6932,21 @@ fieldset[disabled] .navbar .request-info button.active {
 }
 #home #support .sprite-checkmark {
   vertical-align: bottom;
+  display: block;
+  float: left;
+  margin-right: 10px;
 }
 #home #support h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
 }
 #home #support h4 img {
   vertical-align: bottom;
 }
 #home #more-support {
-  background: #e8e8e8;
-  background: #29333a;
   padding-top: 120px;
   padding-bottom: 120px;
-}
-#home #more-support h1,
-#home #more-support h2,
-#home #more-support h4,
-#home #more-support p {
-  color: #fff;
+  border-bottom: 1px solid #333;
 }
 #home #more-support h2 {
   padding-top: 30px;
@@ -6981,6 +6966,7 @@ fieldset[disabled] .navbar .request-info button.active {
   position: relative;
   padding-top: 120px;
   padding-bottom: 120px;
+  border-bottom: 1px solid #333;
 }
 #home #steps h1 {
   margin-top: 50px;
@@ -7088,20 +7074,9 @@ fieldset[disabled] .navbar .request-info button.active {
 }
 #home #models {
   padding-top: 60px;
-  background: #3c4952;
   padding-bottom: 80px;
 }
-#home #models .white {
-  color: #fff;
-}
-#home #models h1 {
-  color: #fff;
-}
-#home #models h3 {
-  color: #fff;
-}
 #home #models h4 {
-  color: #fff;
   text-align: center;
   font-size: 16px;
   margin-bottom: 30px;
@@ -7112,7 +7087,6 @@ fieldset[disabled] .navbar .request-info button.active {
 }
 #home #models p {
   float: right;
-  color: #fff;
 }
 #home #testimonials {
   padding-top: 90px;
@@ -7773,14 +7747,11 @@ footer .copyright {
   text-align: center;
   transition: border-color 200ms ease-in-out;
 }
-.circle-button svg {
+.circle-button img {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: -3px;
   margin: auto;
-}
-.circle-button svg polygon {
-  fill: #fff;
 }

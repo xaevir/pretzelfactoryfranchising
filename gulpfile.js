@@ -31,7 +31,6 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('./testview/'));
 });
 
-
 gulp.task('compress', function() {
   gulp.src([
     'app/js/jquery.js',
@@ -92,7 +91,7 @@ gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('app/css/**/*.less', ['style']).on('change', livereload.changed);
   //gulp.watch('views/*').on('change', livereload.changed);
-  //gulp.watch('public/js/templates/**/*.html', ['ng-template']);
+  gulp.watch('app/js/templates/**/*.html', ['ng-template']);
   //gulp.watch('public/img/icons/*.png', ['sprite']);
   //gulp.watch('views/*.jade', ['jade']);
 });
