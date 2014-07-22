@@ -15,16 +15,6 @@ angular.module('pretzelApp', ['pretzelApp.Steps', 'ngMessages', 'mgcrea.ngStrap'
   })
   .controller('requestFormCtrl', function ($scope, $http, $alert) {
 
-    $scope.hasError = function(name) {
-      var control = $scope.requestForm[name];
-      if (control.$invalid && control.$dirty) {
-        return 'has-error';
-      }
-      if(control.$valid && control.$dirty) {
-        return 'has-success';
-      }
-    };
-
     $scope.sendData = function (data) {
       $http.post('/request-info', data)
         .success(function (res) {

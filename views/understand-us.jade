@@ -53,21 +53,7 @@ block content
               h3 culinary fame, not only for cheese steaks and water ice (characteristically known as &quot;wudder ice&quot; by the locals), but also for the delicious, chewy, salty, &quot;get-em just about everywhere in Philly,&quot; soft twisted pretzels... 
                 a.read-more(href="http://www.phillyhistory.org/blog/index.php/2007/08/soft-pretzels-a-philadelphia-culinary-tradition/") read story
   #request-info
-    .container
-      h1 Request More Info
-      form(role="form" name="requestForm" novalidate rc-submit="sendData(data)" ng-controller="requestFormCtrl")
-        .form-group(ng-class="form.classStatus('name')")
-          input.form-control.input-lg(type="text" name="name" placeholder="NAME" required ng-model="data.name")
-          .help-block(ng-if="form.interactedWith('name')", ng-messages="requestForm.name.$error")
-            div(ng-message="required") Please enter a name
-
-        .form-group(ng-class="form.classStatus('email')")
-          input.form-control.input-lg(type="email", name="email", placeholder="EMAIL", required ng-model="data.email")
-          .help-block(ng-if="form.interactedWith('email')", ng-messages="requestForm.email.$error")
-            div(ng-message="required") Please enter an email
-            div(ng-message="email") Please enter a valid email
-
-        button.btn.btn-success.btn-lg.btn-block(type="submit") GET MORE INFO
+    include request-info
     //section#map
       .container
         h2.intro-headline Our Locations

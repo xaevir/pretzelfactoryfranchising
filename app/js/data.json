@@ -1,4 +1,46 @@
 {
+  "awards": [
+    {
+      "img":"awards-franchise-magazine",
+      "award":"Top 200 Franchises",
+      "awarder":"Franchise Market Magazine"
+    },
+    {
+      "img":"awards-entrepreneur-magazine",
+      "award":"Top 500 Franchises",
+      "awarder":"Entrepreneur Magazine"
+    },
+    {
+      "img":"awards-smart-ceo",
+      "award":"Excellence in Franchising",
+      "awarder":"Smart CEO magazine"
+    },
+    {
+      "img":"awards-ernst-young",
+      "award":"Entrepreneur of the year",
+      "awarder":"Finalist - Ernst & Young Daniel Dizio"
+    },
+    {
+      "img":"awards-south-jersey-courier-post",
+      "award":"Best of South Jersey",
+      "awarder":"South Jersey Courier Post"
+    },
+    {
+      "img":"awards-philadelphia-daily-news",
+      "award":"Best Pretzels Award",
+      "awarder":"Philadelphia Daily News"
+    },
+    {
+      "img":"awards-delco-daily-times",
+      "award":"Best of Delco Award",
+      "awarder":"Delco Daily Times"
+    },
+    {
+      "img":"awards-philadelphia-magazine",
+      "award":"Best of Philly",
+      "awarder":"Philadelphia Magazine"
+    }
+  ],
   "testimonials": [
     {
       "name":"Dino Myers-Lamptey",

@@ -49,38 +49,10 @@ block content
         h1
           span A Leader in the Franchising Industry
         .row
-          .col-md-1
-            i.sprite-franchise-magazine
-            p.award Top 200 Franchises
-            p.awarder Franchise Market Magazine
-          .col-md-1
-            i.sprite-entrepreneur-magazine
-            p.award Top 500 Franchises
-            p.awarder Entrepreneur Magazine
-          .col-md-1
-            i.sprite-smart-ceo-magazine
-            p.award Excellence in Franchising
-            p.awarder Smart CEO magazine
-          .col-md-1
-            i.sprite-ernst-young
-            p.award Entrepreneur of the year
-            p.awarder Finalist - Ernst & Young: CEO, Daniel Dizio
-          .col-md-1
-            i.sprite-south-jersey-courier-post
-            p.award Best of South Jersey
-            p.awarder South Jersey Courier Post
-          .col-md-1
-            i.sprite-philadelphia-daily-news
-            p.award Best Pretzels Award
-            p.awarder Philadelphia Daily News
-          .col-md-1
-            i.sprite-delco-daily-times
-            p.award Best of Delco Award
-            p.awarder Delco Daily Times
-          .col-md-1
-            i.sprite-philadelphia-magazine
-            p.award Best of Philly
-            p.awarder Philadelphia Magazine
+          .col-md-1(ng-repeat="e in pageElements.awards")
+            i(class="sprite-{{e.img}}")
+            p.award {{e.award}}
+            p.awarder {{e.awarder}}
     section#support
       .container
         h1.header Build on Loyal Support
@@ -176,27 +148,6 @@ block content
             h4 {{e.description}}
             img(ng-src="/img/{{e.img}}")
             p {{e.imgCaption}}
-    //section#testimonials
-      .container
-        h1 In the words of our fanchisees
-        .row
-          .col-sm-4(ng-repeat="e in pageElements.testimonials")
-            .photo-wrapper
-              img(ng-src="/img/{{e.photo}}")
-              h2 {{e.name}}
-              p.quote {{e.quote}}
     section#request-info
-      h1 Request More Info
-      form(role="form" name="requestForm" novalidate rc-submit="sendData(data)" ng-controller="requestFormCtrl")
-        .form-group(ng-class="form.classStatus('name')")
-          input.form-control.input-lg(type="text" name="name" placeholder="NAME" required ng-model="data.name")
-          .help-block(ng-if="form.interactedWith('name')", ng-messages="requestForm.name.$error")
-            div(ng-message="required") Please enter a name
+      iframe(src="https://www21.myfranconnect.com/phillypretzelfactory/leadpage.jsp" width="100%" height="1300px")
 
-        .form-group(ng-class="form.classStatus('email')")
-          input.form-control.input-lg(type="email", name="email", placeholder="EMAIL", required ng-model="data.email")
-          .help-block(ng-if="form.interactedWith('email')", ng-messages="requestForm.email.$error")
-            div(ng-message="required") Please enter an email
-            div(ng-message="email") Please enter a valid email
-
-        button.btn.btn-success.btn-lg.btn-block(type="submit") GET MORE INFO

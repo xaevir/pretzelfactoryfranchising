@@ -49,7 +49,6 @@ angular.module('rcForm', [])
             var formController = (controllers.length > 1) ? controllers[1] : null;
 
             submitController.setFormController(formController);
-
             scope.form = submitController;
           },
           post: function(scope, formElement, attributes, controllers) {
@@ -66,7 +65,7 @@ angular.module('rcForm', [])
 
                 scope.$apply(function() {
                   fn(scope, {$event:event});
-                  });
+                });
             });
           }
         };
