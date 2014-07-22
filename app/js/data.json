@@ -1,4 +1,72 @@
 {
+  "moreSupport": [
+    {
+      "name":"Daily Field Support",
+      "value":"We focus every day on providing unmatched franchise support, including access to our Franchise Support Managers who routinely work with you to maintain operation efficiency and build sales through store visits and consistent communication."
+    },
+    {
+      "name":"Daily Field Support Company Intranet",
+      "value":"You benefit from real time communication on our company intranet by recieving up-to-the-minute information from our franchise support department and easy communication with your fellow franchisees."
+    },
+    {
+      "name":"Franchise Operations Commitee",
+      "value":"Every fracnhisee has the opportunity to be involved in shaping the direction of Philly Pretzel Factory through participation on the Franchise Operations Committee."
+    },
+    {
+      "name":"Mystery Shops",
+      "value":"Receive valuable reports from mystery shop visits to your Philly Pretzel Factory. This information will help you measure customer service, product quality, and the customer experience."
+    },
+    {
+      "name":"Annual Convention",
+      "value":"Top professional speakers and innovative vendors are just a few of the participants at our annual convention. This gives you the opportunity to learn, network, and build relationships with fellow franchisees."
+    },
+    {
+      "name":"Marketing Support",
+      "value":"The life blood of any business is consistent marketing to build sales and we provide numerous options to support your execution of the marketing plan proven to grow your Philly Pretzel Factory."
+    },
+    {
+      "name":"Purchasing Power",
+      "value":"Together, we can do more. Our franchisees have access to the the cost saving purchasing power provided by our growing franchise system."
+    },
+    {
+      "name":"Community Involvement",
+      "value":"A successful business is about more than sales or even good service. It is about people, plain and simple. Our community support program helps you explore ways to give back to your community."
+    }
+  ],
+  "support": [
+    {
+      "name":"Comprehensive Training",
+      "value":"Our comprehensive training program provides extensive classroom instruction and hands-on training in our corporate office followed by on-site training when you open your Philly Pretzel Factory."
+    },
+    {
+      "name":"Online Pre-Opening Checklist",
+      "value":"One of the reasons our franchisees get off to such a quick start is they can monitor all pre-opening tasks on-line which insures you build your business quickly."
+    },
+    {
+      "name":"Real Estate Assistance",
+      "value":"Our real estate manager will find locations as well as evaluate any locations you have found, offering a complete analysis of each location before you make the ultimate choice."
+    },
+    {
+      "name":"Construction Assistance",
+      "value":"Our construction manager will provide you assistance with all the phases of construction, site plans, permits, equipment delivery and vendors."
+    },
+    {
+      "name":"Onsite Store Opening Support",
+      "value":"You will receive a week of onsite support when you open your store to make the launch of your new Philly Pretzel Factory run smoothly."
+    },
+    {
+      "name":"Access to Operations Manual",
+      "value":"Our comprehensive operations manual allows easy access to descriptions and detailed instructions of every aspect of our Philly Pretzel Factory business model, all available online for reference at a touch of a button."
+    },
+    {
+      "name":"Access to Marketing Manual",
+      "value":"Our industry-leading marketing manual walks you step-by-step through proven Philly Pretzel Factory marketing methods to help you build revenue and generate profits."
+    },
+    {
+      "name":"Inclusion on Our Website",
+      "value":"We maximize the exposure of our website through consistent search engine optimization to bring new customers to our corporate website and drive them through your doors for increased sales."
+    }
+  ],
   "awards": [
     {
       "img":"awards-franchise-magazine",

@@ -59,44 +59,11 @@ block content
         h3.subhead.
           Opening a new business is a huge undertaking, but you don’t have to do it alone. Our team is here to provide the support and training you need to ensure your store starts off strong and continues to grow.
         h2 The 8 Ways We Get You Off The Ground
-        .row
-          .col-sm-3
-            h4.
-              Comprehensive Training
-            p Our comprehensive training program provides extensive classroom instruction and hands-on training in our corporate office followed by on-site training when you open your Philly Pretzel Factory.
-          .col-sm-3
-            h4.
-              Online Pre-Opening Checklist
-            p One of the reasons our franchisees get off to such a quick start is they can monitor all pre-opening tasks on-line which insures you build your business quickly.
-          .col-sm-3
-            h4.
-              Real Estate Assistance
-            p Our real estate manager will find locations as well as evaluate any locations you have found, offering a complete analysis of each location before you make the ultimate choice.
-          .col-sm-3
-            h4.
-              Construction Assistance
-            p Our construction manager will provide you assistance with all the phases of construction, site plans, permits, equipment delivery and vendors.
-        .row
-          .col-sm-3
-            h4.
-              <i class="sprite-checkmark"></i>
-              Onsite Store Opening Support
-            p You will receive a week of onsite support when you open your store to make the launch of your new Philly Pretzel Factory run smoothly.
-          .col-sm-3
-            h4.
-              <i class="sprite-checkmark"></i>
-              Access to Operations Manual
-            p Our comprehensive operations manual allows easy access to descriptions and detailed instructions of every aspect of our Philly Pretzel Factory business model, all available online for reference at a touch of a button.
-          .col-sm-3
-            h4.
-              <i class="sprite-checkmark"></i>
-              Access to Marketing Manual
-            p Our industry-leading marketing manual walks you step-by-step through proven Philly Pretzel Factory marketing methods to help you build revenue and generate profits.
-          .col-sm-3
-            h4.
-              <i class="sprite-checkmark"></i>
-              Inclusion on Our Website
-            p We maximize the exposure of our website through consistent search engine optimization to bring new customers to our corporate website and drive them through your doors for increased sales.
+        .row(ng-repeat="groups in pageElements.supportGroups")
+          .col-sm-3(ng-repeat="e in groups")
+            i.sprite-checkmark
+            h4 {{e.name}}
+            p {{e.value}}
     section#steps
       h1 Steps to Becoming a Philly Pretzel Factory Owner
       .container
@@ -104,41 +71,11 @@ block content
     section#more-support
       .container
         h1 The Support to Keep You Going Strong
-        .row
-          .col-sm-3
-            h4.
-              Daily Field Support
-            p We focus every day on providing unmatched franchise support, including access to our Franchise Support Managers who routinely work with you to maintain operation efficiency and build sales through store visits and consistent communication.
-          .col-sm-3
-            h4.
-              Daily Field Support
-              Company Intranet
-            p You benefit from real time communication on our company intranet by recieving up-to-the-minute information from our franchise support department and easy communication with your fellow franchisees.
-          .col-sm-3
-            h4.
-              Franchise Operations Commitee 
-            p Every fracnhisee has the opportunity to be involved in shaping the direction of Philly Pretzel Factory through participation on the Franchise Operations Committee.
-          .col-sm-3
-            h4.
-              Mystery Shops
-            p Receive valuable reports from mystery shop visits to your Philly Pretzel Factory. This information will help you measure customer service, product quality, and the customer experience.
-        .row
-          .col-sm-3
-            h4.
-              Annual Convention
-            p Top professional speakers and innovative vendors are just a few of the participants at our annual convention. This gives you the opportunity to learn, network, and build relationships with fellow franchisees.
-          .col-sm-3
-            h4.
-              Marketing Support
-            p The life blood of any business is consistent marketing to build sales and we provide numerous options to support your execution of the marketing plan proven to grow your Philly Pretzel Factory.
-          .col-sm-3
-            h4.
-              Purchasing Power
-            p Together, we can do more. Our franchisees have access to the the cost saving purchasing power provided by our growing franchise system.
-          .col-sm-3
-            h4.
-              Community Involvement
-            p A successful business is about more than sales or even good service. It is about people, plain and simple. Our community support program helps you explore ways to give back to your community.
+        .row(ng-repeat="groups in pageElements.moreSupportGroups")
+          .col-sm-3(ng-repeat="e in groups")
+            i.sprite-checkmark
+            h4 {{e.name}}
+            p {{e.value}}
     section#models
       .container
         h1 Our 3 Business Models

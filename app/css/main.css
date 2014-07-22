@@ -6888,60 +6888,33 @@ fieldset[disabled] .navbar .request-info button.active {
   color: #fff;
   font-size: 13px;
 }
-#home #support {
-  padding-top: 60px;
-  padding-bottom: 120px;
-  padding-top: 120px;
-  border-bottom: 1px solid #333;
-}
-#home #support h2 {
-  padding-top: 30px;
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-#home #support .number-circle {
-  display: none;
-  border-radius: 50%;
-  font-size: 34px;
-  width: 50px;
-  height: 50px;
-  background: #006846;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-#home #support .sprite-checkmark {
-  vertical-align: bottom;
-  display: block;
-  float: left;
-  margin-right: 10px;
-}
-#home #support h4 {
-  font-size: 18px;
-  font-weight: 700;
-}
-#home #support h4 img {
-  vertical-align: bottom;
-}
+#home #support,
 #home #more-support {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
   border-bottom: 1px solid #333;
 }
+#home #support h2,
 #home #more-support h2 {
   padding-top: 30px;
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 30px;
 }
+#home #support .sprite-checkmark,
+#home #more-support .sprite-checkmark {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+#home #support p,
+#home #more-support p {
+  clear: both;
+}
+#home #support h4,
 #home #more-support h4 {
   font-size: 18px;
   font-weight: 700;
-}
-#home #more-support h4 img {
-  vertical-align: bottom;
+  text-align: center;
 }
 #home #steps {
   text-align: center;
@@ -7702,18 +7675,19 @@ footer .copyright {
   color: #fff;
 }
 #request-info {
-  /*
   padding-bottom: 120px;
   background: #f5f5f5;
   padding-top: 80px;
-  form {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  h1 {
-    text-align: center;
-  }
-  */
+}
+#request-info form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#request-info h1 {
+  text-align: center;
+}
+#understand #request-info {
+  background: #d4d4d4;
 }
 .circle-button {
   position: absolute;

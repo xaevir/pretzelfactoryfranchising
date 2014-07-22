@@ -1,13 +1,15 @@
 'use strict';
 
 angular.module('pretzelApp', ['pretzelApp.Steps', 'ngMessages', 'mgcrea.ngStrap', 'rcForm', 'ngSanitize'])
-  .controller('pretzelCtrl', function ($scope, $http) {
+  .controller('pretzelCtrl', function ($scope, $http, $filter) {
 
     $scope.pageElements = [];
 
     $http.get('/js/data.json')
       .success(function (data) {
         $scope.pageElements = data;
+        $scope.pageElements.supportGroups = $filter('group')(data.support, 4);
+        $scope.pageElements.moreSupportGroups = $filter('group')(data.moreSupport, 4);
       })
       .error(function (error) {
         $scope.error = error;
