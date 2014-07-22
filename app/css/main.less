@@ -209,50 +209,32 @@ body {
   .header-content {
     position: relative; 
     height: 100%;
+    display: table;
+    margin-top: -70px;
+    padding-top: 70px;
   }
   #hero {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
-    margin-top: -50px;
+    display: table-cell;
+    vertical-align: middle;
     h1 {
-      padding: 20px 20px;
-      color: @pretzel-green;
-      color: #000;
-      display: inline-block;
       margin: 0;
-      font-family: berninosans;
-      font-size: 50px;
-      font-weight: 700;
-      margin: 0 auto;
-      max-width: 950px;
+      padding: 0;
+      color: #fff;
       font-family: aleo, sans-serif; 
       font-weight: 700;
       font-size: 20px;
-      //color: hsla(0,0,100, .7);
-      color: #fff;
+      text-align: center;
       @media (min-width: @screen-sm-min) { //768 -> up
         font-size: 68px;
       }
-      b {
-        font-size: 40px;
-      }
-      span {
-        font-size: 16px;
-        font-weight: 300;
-        display: block;
-        padding-bottom: 10px;
-        @media (min-width: @screen-sm-min) { //768 -> up
-          font-size: 30px;
-        }
-
+    }
+    h2 {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      @media (min-width: @screen-sm-min) { //768 -> up
+        font-size: 30px;
       }
     }
   }
@@ -984,6 +966,7 @@ footer {
 }
 
 .circle-button {
+  cursor: pointer;
   position: absolute;
   left: 0;
   right: 0;

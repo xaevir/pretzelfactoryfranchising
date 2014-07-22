@@ -65,6 +65,10 @@ html(ng-app="pretzelApp")
           
         }
 
+        $(".circle-button").click(function() {
+          $('html, body').animate({'scrollTop': $('#benefits').offset().top}, 1000);
+        })
+
         $(".scroll-down").click(function() {
           $('html, body').animate({'scrollTop': $('#request-info').offset().top}, 2000);
         })

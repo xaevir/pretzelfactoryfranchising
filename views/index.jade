@@ -4,8 +4,6 @@ extends layout
 // this clears it from layout
 block nav
 
-//block logo
-
 block content
   header
     .wrapper-bg
@@ -16,7 +14,7 @@ block content
       .header-content
         #hero
           h1 PHILLY PRETZEL FACTORY FRANCHISING
-            span The simplicity of a great pretzel combined with support that feels like family
+          h2 The simplicity of a great pretzel combined with support<br>that feels like family
       .circle-button
         img(src="/img/chevron-sm.png")
   #home-body
@@ -84,7 +82,6 @@ block content
             h3 {{e.title}}
             h4 {{e.description}}
             img(ng-src="/img/{{e.img}}")
-            p {{e.imgCaption}}
+            p(ng-bind-html="e.imgCaption")
     section#request-info
-      iframe(src="https://www21.myfranconnect.com/phillypretzelfactory/leadpage.jsp" width="100%" height="1300px")
-
+      include request-info 
