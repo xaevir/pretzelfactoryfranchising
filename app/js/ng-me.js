@@ -16,6 +16,12 @@ angular.module('pretzelApp', ['pretzelApp.Steps', 'ngMessages', 'mgcrea.ngStrap'
       });
   })
   .controller('requestFormCtrl', function ($scope, $http, $alert) {
+     
+    $scope.data = {country: 1};
+
+    $scope.resetData = function() {
+      $scope.data = {country: 1};
+    }
 
     $scope.sendData = function (data) {
       $http.post('/request-info', data)
@@ -27,7 +33,7 @@ angular.module('pretzelApp', ['pretzelApp.Steps', 'ngMessages', 'mgcrea.ngStrap'
             container: 'body'
           });
           $scope.requestForm.$setPristine();
-          $scope.data = {};
+          $scope.resetData();
           $scope.form.reset();
         })
       .error(function (error) {

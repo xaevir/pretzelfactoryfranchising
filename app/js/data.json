@@ -203,5 +203,219 @@
       "icon": "balloons",
       "description": "By far the most exciting step! At this point, you have been working really hard, and it is time to official announce your store to your community. Once your store is open and running, a Grand Opening will be scheduled to kick start the marketing of your Philly Pretzel Factory."
     }
+  ],
+  "states": [
+    {
+      "name":"Alabama ",
+      "value":1
+    },
+    {
+      "name":"Alaska ",
+      "value":2
+    },
+    {
+      "name":"Arizona ",
+      "value":3
+    },
+    {
+      "name":"Arkansas ",
+      "value":4
+    },
+    {
+      "name":"California ",
+      "value":5
+    },
+    {
+      "name":"Colorado ",
+      "value":6
+    },
+    {
+      "name":"Connecticut ",
+      "value":7
+    },
+    {
+      "name":"Delaware ",
+      "value":8
+    },
+    {
+      "name":"District of Columbia",
+      "value": 9
+    },
+    {
+      "name":"Florida ",
+      "value":10
+    },
+    {
+      "name":"Georgia ",
+      "value":11
+    },
+    {
+      "name":"Hawaii ",
+      "value":12
+    },
+    {
+      "name":"Idaho ",
+      "value":13
+    },
+    {
+      "name":"Illinois ",
+      "value":14
+    },
+    {
+      "name":"Indiana ",
+      "value":15
+    },
+    {
+      "name":"Iowa ",
+      "value":16
+    },
+    {
+      "name":"Kansas ",
+      "value":17
+    },
+    {
+      "name":"Kentucky ",
+      "value":18
+    },
+    {
+      "name":"Louisiana ",
+      "value":20
+    },
+    {
+      "name":"Maine ",
+      "value":21
+    },
+    {
+      "name":"Maryland ",
+      "value":22
+    },
+    {
+      "name":"Massachusetts ",
+      "value":23
+    },
+    {
+      "name":"Michigan ",
+      "value":24
+    },
+    {
+      "name":"Minnesota ",
+      "value":25
+    },
+    {
+      "name":"Mississippi ",
+      "value":26
+    },
+    {
+      "name":"Missouri ",
+      "value":27
+    },
+    {
+      "name":"Montana ",
+      "value":28
+    },
+    {
+      "name":"Nebraska ",
+      "value":29
+    },
+    {
+      "name":"Nevada ",
+      "value":30
+    },
+    {
+      "name":"New Hampshire",
+      "value":31
+    },
+    {
+      "name":"New Jersey",
+      "value":32
+    },
+    {
+      "name":"New Mexico",
+      "value":33
+    },
+    {
+      "name":"New York",
+      "value":34
+    },
+    {
+      "name":"North Carolina",
+      "value":35
+    },
+    {
+      "name":"North Dakota",
+      "value":36
+    },
+    {
+      "name":"Ohio ",
+      "value":37
+    },
+    {
+      "name":"Oklahoma ",
+      "value":38
+    },
+    {
+      "name":"Oregon ",
+      "value":39
+    },
+    {
+      "name":"Pennsylvania ",
+      "value":40
+    },
+    {
+      "name":"Puerto Rico",
+      "value":41
+    },
+    {
+      "name":"Rhode Island",
+      "value":42
+    },
+    {
+      "name":"South Carolina",
+      "value":43
+    },
+    {
+      "name":"South Dakota",
+      "value":44
+    },
+    {
+      "name":"Tennessee ",
+      "value":45
+    },
+    {
+      "name":"Texas ",
+      "value":46
+    },
+    {
+      "name":"Utah ",
+      "value":47
+    },
+    {
+      "name":"Vermont ",
+      "value":48
+    },
+    {
+      "name":"Virgin Islands",
+      "value":49
+    },
+    {
+      "name":"Virginia ",
+      "value":50
+    },
+    {
+      "name":"Washington ",
+      "value":51
+    },
+    {
+      "name":"West Virginia",
+      "value":52
+    },
+    {
+      "name":"Wisconsin ",
+      "value":53
+    },
+    {
+      "name":"Wyoming ",
+      "value":54
+    }
   ]
 }

@@ -18,7 +18,14 @@ block content
         div(ng-message="required") Please enter an email
         div(ng-message="email") Please enter a valid email
 
-    .form-group(ng-class="form.classStatus('state')")
-      select.form-control.input-lg(name="state", required ng-model="data.state" ng-options="item.action for item in todos")
+    .form-group(ng-class="form.classStatus('stateID')")
+      select.form-control.input-lg(
+        name="stateID" 
+        required 
+        ng-model="data.stateID" 
+        ng-options="state.value as state.name for state in pageElements.states")
+        option(value="") Select State
+      .help-block(ng-if="form.interactedWith('stateID')", ng-messages="requestForm.stateID.$error")
+        div(ng-message="required") Please select your state 
 
     button.btn.btn-success.btn-lg.btn-block(type="submit") GET MORE INFO
