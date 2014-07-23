@@ -22,8 +22,11 @@ app.get('/understand-us', function *() {
 app.post('/request-info', koaBody(), function *() {
 
   var constraint = {
-    name: new Assert().NotBlank(),
-    email: [new Assert().NotBlank(), new Assert().Email()]
+    firstName: new Assert().Required(),
+    lastName: new Assert().Required(),
+    country: new Assert().Required(),
+    stateID: new Assert().Required(),
+    email: [new Assert().Required(), new Assert().Email()]
   };
 
   var res = validator.validate(this.request.body, constraint);
@@ -35,13 +38,15 @@ app.post('/request-info', koaBody(), function *() {
 
   var mailOptions = {
     from: 'Pretzel Factory Lead <lead@pretzelfactoryfranchising.com>',
-    //to: 'phillypretzelfactory@franconnect.com',
-    //bcc: 'bobby.chambers33@gmail.com',
-    to: 'bobby.chambers33@gmail.com',
+    to: 'phillypretzelfactory@franconnect.com',
+    bcc: 'bobby.chambers33@gmail.com',
     subject: 'Pretzel Factory Franchise Lead',
-    text: 'name: ' + this.request.body.name + '\n' +
+    text: 'firstName: ' + this.request.body.firstName + '\n' +
+          'lastName: ' + this.request.body.lastName + '\n' +
           'email: ' + this.request.body.email + '\n' +
-          'url-of-form: http://ownappf.com'
+          'country: ' + this.request.body.country + '\n' +
+          'stateID: ' + this.request.body.stateID + '\n' +
+          'formUrl: http://ownappf.com'
   };
 
   var response = yield sendMail(mailOptions);
