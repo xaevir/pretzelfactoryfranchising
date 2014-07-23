@@ -20,7 +20,7 @@ var gulp = require('gulp')
 gulp.task('style', function () {
   log('Generate CSS files ' + (new Date()).toString());
   gulp.src('app/css/main.less')
-     .pipe(plumber())
+    .pipe(plumber())
     .pipe(less())
     .pipe(gulp.dest('app/css'));
 });
@@ -43,16 +43,17 @@ gulp.task('compress', function() {
     'app/js/directives.js',
     'app/js/components/steps.js',
     'app/js/templates.js',
+    'app/js/filters.js',
     'app/js/owl.carousel/owl.carousel.js',
     'app/js/angular-strap.min.js',
+    'app/js/angular-strap.tpl.min.js',
     'app/bower_components/lodash/dist/lodash.min.js',
     'app/bower_components/multiline/browser.js',
-    'app/bower_components/snap.svg/dist/snap.svg-min.js',
-    'app/bower_components/greensock/src/minified/TweenMax.min.js',
+    'app/bower_components/angular-sanitize/angular-sanitize.min.js',
     'app/css/bootstrap-3.1.1/js/collapse.js'
   ])
     .pipe(concat('app.min.js'))
-    .pipe(gulp.dest('public/js'));
+    .pipe(gulp.dest('app/js'));
 });
 
 

@@ -9,9 +9,7 @@ var koa = require('koa'),
  * Environment.
  */
 
-var env = process.env.NODE_ENV || 'development';
-
-if ('test' !== env) app.use(logger());
+if ('test' !== app.env) app.use(logger());
 
 app.use(logger());
 app.use(serve(__dirname + '/app'));

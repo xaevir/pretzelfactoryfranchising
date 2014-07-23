@@ -11,12 +11,12 @@ var app = require('../index'),
     sendMail = thunkify(smtpTransport.sendMail);
 
 app.get('/', function *() {
-  yield this.render('index', {id: 'home'});
+  yield this.render('index', {id: 'home', env: app.env });
 });
 
 app.get('/understand-us', function *() {
   //this.body = 'hello world bobby'
-  yield this.render('understand-us', {id:'understand' });
+  yield this.render('understand-us', {id:'understand', env: app.env, title: 'Understand Us' });
 });
 
 app.post('/request-info', koaBody(), function *() {
