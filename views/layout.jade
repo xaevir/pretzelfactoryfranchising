@@ -39,17 +39,7 @@ html(ng-app="pretzelApp")
       ga('send', 'pageview');
 
 
-    // Google Code for Remarketing Tag 
-    script.
-      /* <![CDATA[ */
-      var google_conversion_id = 978658412;
-      var google_custom_params = window.google_tag_params;
-      var google_remarketing_only = true;
-      /* ]]> */
-    script(src="//www.googleadservices.com/pagead/conversion.js")
-    noscript
-      div(style="display:inline;")
-        img(height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/978658412/?value=0&amp;guid=ON&amp;script=0")
+
 
     block head
   body(ng-controller="pretzelCtrl", id= locals.id ? locals.id : '')
@@ -82,4 +72,14 @@ html(ng-app="pretzelApp")
           $('html, body').animate({'scrollTop': $('#request-info').offset().top}, 2000);
         })
       });
-
+    // Google Code for Remarketing Tag 
+    script.
+      /* <![CDATA[ */
+      var google_conversion_id = 978658412;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+    script(src="//www.googleadservices.com/pagead/conversion.js")
+    noscript
+      div(style="display:inline;")
+        img(height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/978658412/?value=0&amp;guid=ON&amp;script=0")
