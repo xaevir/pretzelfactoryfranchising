@@ -4,7 +4,8 @@ var koa = require('koa'),
     app = module.exports = koa(),
     serve = require('koa-static'),
     views = require('koa-views'),
-    gzip = require('koa-gzip');
+    gzip = require('koa-gzip'),
+    config = require('./config');
 
 /**
  * Environment.
@@ -21,5 +22,7 @@ app.use(router(app));
 
 require('./routes/index');
 
-app.listen(8001);
-console.log('listening on port 8001');
+app.listen(config.app.port);
+if (app.env !== 'test') {
+  console.log('pretzel listening on port ' + config.app.port);
+}
