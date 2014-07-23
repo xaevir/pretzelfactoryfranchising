@@ -14,6 +14,7 @@
     "lodash": "~2.4.1",
     "owl.carousel": "*",
     "jquery-waypoints": "~2.0.5",
-    "ng-notify": "~0.5.0"
+    "ng-notify": "~0.5.0",
+    "respond": "~1.4.2"
   }
 }

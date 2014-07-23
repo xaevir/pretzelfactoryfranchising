@@ -12,6 +12,10 @@ html(ng-app="pretzelApp")
       title #{titleBase}
     link(rel='stylesheet', href='/css/main.css')
 
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='/bower_components/respond/dest/respond.src.js')
+
     if locals.env === 'development'
       script(src="/bower_components/jquery/jquery.js")
       script(src="/bower_components/angular/angular.js")
