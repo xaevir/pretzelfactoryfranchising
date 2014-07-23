@@ -6,15 +6,15 @@ angular.module('rcForm', [])
       restrict: 'A',
       require: ['rcSubmit', '?form'],
       controller: ['$scope', function ($scope) {
-        this.attempted = false;
+        this.submitted = false;
         var formController = null;
 
-        this.setAttempted = function() {
-            this.attempted = true;
+        this.setSubmitted = function() {
+            this.submitted = true;
         };
 
         this.reset = function() {
-            this.attempted = false;
+            this.submitted = false;
         };
 
         this.setFormController = function(controller) {
@@ -22,7 +22,7 @@ angular.module('rcForm', [])
         };
 
         this.isInvalid = function (field) {
-          return field.$invalid && (field.$dirty || this.attempted);
+          return field.$invalid && (field.$dirty || this.submitted);
         };
 
         this.isValid = function (field) {
@@ -37,7 +37,7 @@ angular.module('rcForm', [])
             return 'has-error';
         };
         this.interactedWith = function(controlName) {
-          return this.attempted || formController[controlName].$dirty;
+          return this.submitted || formController[controlName].$dirty;
         };
 
       }],
@@ -58,7 +58,7 @@ angular.module('rcForm', [])
             var fn = $parse(attributes.rcSubmit);
 
             formElement.bind('submit', function (event) {
-              submitController.setAttempted();
+              submitController.setSubmitted();
                 if (!scope.$$phase) scope.$apply();
 
                 if (!formController.$valid) return false;

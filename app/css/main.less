@@ -2,11 +2,16 @@
 @import "fonts.less";
 @import (inline) "sprite.css";
 @import (inline) "bootstrap.additions.css";
-@import (inline) "../js/owl.carousel/assets/owl.carousel.css";
-@import (inline) "../js/owl.carousel/assets/owl.theme.default.css";
+@import (inline) "../bower_components/owl.carousel/dist/assets/owl.carousel.css";
+@import (inline) "../bower_components/owl.carousel/dist/assets/owl.theme.default.css";
+@import (inline) "../bower_components/ng-notify/dist/ng-notify.min.css";
 
 @icon-font-path: "bootstrap-3.1.1/fonts/";
 
+// ngNotify to show above fixed nav
+.ngn-info {
+  z-index: 9999;
+}
 //@media (min-width: 1070px) {//992
   //.container {
    // max-width: 800px;

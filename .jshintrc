@@ -80,5 +80,5 @@
     "onevar"        : false,    // true: Allow only one `var` statement per function
     "passfail"      : false,    // true: Stop on first error
     "white"         : false,    // true: Check against strict whitespace and indentation rules
-    "predef": ["angular", "_", "multiline", "Snap", "TweenMax"]
+    "predef": ["angular", "_", "multiline", "ngNotify"]
 }

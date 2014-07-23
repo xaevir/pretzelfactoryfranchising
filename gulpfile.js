@@ -35,24 +35,21 @@ gulp.task('jade', function() {
 
 gulp.task('compress', function() {
   gulp.src([
-    'app/js/jquery.js',
-    'app/js/angular.js',
-    'app/js/ng-messages.js',
-    'app/js/ui-bootstrap-tpls-0.11.0.js',
-    'app/js/waypoints.min.js',
+    'app/bower_components/jquery/jquery.js',
+    'app/bower_components/angular/angular.js',
+    'app/bower_components/angular-sanitize/angular-sanitize.js',
+    'app/libs/ui-bootstrap-collapse-0.10.0.js',
+    'app/js/app.js',
     'app/js/components/submit.js',
-    'app/js/ng-me.js',
-    'app/js/directives.js',
     'app/js/components/steps.js',
+    'app/js/directives.js',
     'app/js/templates.js',
     'app/js/filters.js',
-    'app/js/owl.carousel/owl.carousel.js',
-    'app/js/angular-strap.min.js',
-    'app/js/angular-strap.tpl.min.js',
+    'app/bower_components/owl.carousel/dist/owl.carousel.js',
+    'app/bower_components/jquery-waypoints/waypoints.js',
     'app/bower_components/lodash/dist/lodash.min.js',
-    'app/bower_components/multiline/browser.js',
-    'app/bower_components/angular-sanitize/angular-sanitize.min.js',
-    'app/css/bootstrap-3.1.1/js/collapse.js'
+    'app/bower_components/bootstrap/js/collapse.js',
+    'app/bower_components/ng-notify/dist/ng-notify.min.js',
   ])
     .pipe(concat('app.min.js'))
     .pipe(ngmin())

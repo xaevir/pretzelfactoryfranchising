@@ -3,20 +3,20 @@ block content
   form(role="form" name="requestForm" novalidate rc-submit="sendData(data)" ng-controller="requestFormCtrl")
     .form-group(ng-class="form.classStatus('firstName')")
       input.form-control.input-lg(type="text" name="firstName" placeholder="FIRST NAME" required ng-model="data.firstName")
-      .help-block(ng-if="form.interactedWith('firstName')", ng-messages="requestForm.firstName.$error")
-        div(ng-message="required") Please enter your first name
+      .help-block(ng-if="requestForm.firstName.$error.required && (requestForm.firstName.$dirty  || form.submitted)")
+        p Please enter your first name
 
     .form-group(ng-class="form.classStatus('lastName')")
       input.form-control.input-lg(type="text" name="lastName" placeholder="LAST NAME" required ng-model="data.lastName")
-      .help-block(ng-if="form.interactedWith('lastName')", ng-messages="requestForm.lastName.$error")
-        div(ng-message="required") Please enter your last name
+      .help-block(ng-if="requestForm.lastName.$invalid && (requestForm.lastName.$dirty  || form.submitted)")
+        p Please enter your last name
 
 
     .form-group(ng-class="form.classStatus('email')")
       input.form-control.input-lg(type="email", name="email", placeholder="EMAIL", required ng-model="data.email")
-      .help-block(ng-if="form.interactedWith('email')", ng-messages="requestForm.email.$error")
-        div(ng-message="required") Please enter an email
-        div(ng-message="email") Please enter a valid email
+      .help-block(ng-if="requestForm.email.$invalid && (requestForm.email.$dirty  || form.submitted)")
+        p(ng-show="requestForm.email.$error.required") Please enter an email
+        p(ng-show="requestForm.email.$error.email") Please enter a valid email
 
     .form-group(ng-class="form.classStatus('stateID')")
       select.form-control.input-lg(
@@ -25,7 +25,7 @@ block content
         ng-model="data.stateID" 
         ng-options="state.value as state.name for state in pageElements.states")
         option(value="") Select State
-      .help-block(ng-if="form.interactedWith('stateID')", ng-messages="requestForm.stateID.$error")
-        div(ng-message="required") Please select your state 
+      .help-block(ng-if="requestForm.stateID.$invalid && (requestForm.stateID.$dirty  || form.submitted)")
+        p Please select your state 
 
     button.btn.btn-success.btn-lg.btn-block(type="submit") GET MORE INFO
