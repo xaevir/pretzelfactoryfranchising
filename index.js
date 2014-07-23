@@ -3,15 +3,16 @@ var koa = require('koa'),
     router = require('koa-router'),
     app = module.exports = koa(),
     serve = require('koa-static'),
-    views = require('koa-views');
+    views = require('koa-views'),
+    gzip = require('koa-gzip');
 
 /**
  * Environment.
  */
 
 if ('test' !== app.env) app.use(logger());
-
 app.use(logger());
+app.use(gzip());
 app.use(serve(__dirname + '/app'));
 app.use(views('views', { default: 'jade'}));
 

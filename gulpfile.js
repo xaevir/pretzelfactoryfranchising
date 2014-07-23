@@ -8,10 +8,11 @@ var gulp = require('gulp')
   , log = util.log
   , templateCache = require('gulp-angular-templatecache')
   , spritesmith = require('gulp.spritesmith')
-  //, ngmin = require('gulp-ngmin')
-  //, uglify = require('gulp-uglify')
+  , ngmin = require('gulp-ngmin')
+  , uglify = require('gulp-uglify')
   , jade = require('gulp-jade')
-  , plumber = require('gulp-plumber');
+  , plumber = require('gulp-plumber')
+  , minifyCSS = require('gulp-minify-css');
   //, watch = require('gulp-watch')
   //, notify = require('gulp-notify')
 
@@ -22,6 +23,7 @@ gulp.task('style', function () {
   gulp.src('app/css/main.less')
     .pipe(plumber())
     .pipe(less())
+    .pipe(minifyCSS())
     .pipe(gulp.dest('app/css'));
 });
 
@@ -53,6 +55,8 @@ gulp.task('compress', function() {
     'app/css/bootstrap-3.1.1/js/collapse.js'
   ])
     .pipe(concat('app.min.js'))
+    .pipe(ngmin())
+    .pipe(uglify())
     .pipe(gulp.dest('app/js'));
 });
 
