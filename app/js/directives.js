@@ -1,19 +1,40 @@
 'use strict';
 
 angular.module('pretzelApp')
-  .directive('downArrows', function() {
+
+  .directive('equalHeight', function($timeout) {
     return {
-      link: function(scope, element) {
+      link: function($scope, $element) {
+        if ($scope.$last) {
+          $timeout(function() { 
+            $element.parent().find('.header').equalHeight({
+              //responsive: true
+            });         
+          }, 0);
 
-        var s = Snap('#arrows'),
-          a1 = s.select('#a1'),
-          a2 = s.select('#a2'),
-          a3 = s.select('#a3');
-
-        TweenMax.to(a1.node, 1, {opacity:0, repeat:-1, yoyo:true});
-        TweenMax.to(a2.node, 1, {opacity:0, repeat:-1, yoyo:true, delay: 0.5});
-        TweenMax.to(a3.node, 1, {opacity:0, repeat:-1, yoyo:true, delay: 1});
+        }
       }
     };
   })
+  .directive('slideInWaypoint', function() {
+    return {
+      scope: {
+        waypointMarker: '@slideInWaypoint'
+      },
+      link: function($scope, $element) {
 
+        $($scope.waypointMarker).waypoint(function(direction) {
+          if (direction === 'down') {
+            TweenLite.set($element, { position: 'fixed', top: -150, right: 0, left:0});
+            TweenLite.to($element, 0.25, {top:0});
+          }
+          if (direction === 'up') {
+            var complete = function (self) {
+              TweenLite.set(self.target, { position: 'static'});
+            };
+            TweenLite.to($element, 0.25, {top:-150, onComplete:complete, onCompleteParams:['{self}']});
+          }
+        });
+      }
+    };
+  })

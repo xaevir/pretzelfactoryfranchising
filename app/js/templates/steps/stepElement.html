@@ -1,7 +1,9 @@
 <div class="item-heading" ng-click="toggleOpen()">
   <h2>Step {{$index + 1}}</h2>
   <div class="circle">
-    <i class="sprite-{{e.icon}}"></i>
+    <div class="cell">
+      <i class="sprite-{{e.icon}}"></i>
+    </div>
   </div>
   <h3>{{e.name}}</h3>
   <span class="glyphicon" ng-class="{'glyphicon-chevron-up': isOpen, 'glyphicon-chevron-down': !isOpen}"></span>

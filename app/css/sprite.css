@@ -5,33 +5,45 @@ Icon classes can be used entirely standalone. They are named after their origina
 <i class="icon-home"></i>
 ```
 */
+.sprite-arrow-left {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1475px;
+  width: 40px;
+  height: 75px;
+}
+.sprite-arrow-right {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1400px;
+  width: 40px;
+  height: 75px;
+}
 .sprite-awards-delco-daily-times {
   background-image: url(/img/sprite.png);
-  background-position: 0px -1256px;
+  background-position: 0px -1326px;
   width: 69px;
   height: 74px;
 }
 .sprite-awards-entrepreneur-magazine {
   background-image: url(/img/sprite.png);
-  background-position: 0px -1114px;
+  background-position: 0px -1255px;
   width: 50px;
   height: 71px;
 }
 .sprite-awards-ernst-young {
   background-image: url(/img/sprite.png);
-  background-position: 0px -973px;
+  background-position: 0px -623px;
   width: 115px;
   height: 70px;
 }
 .sprite-awards-franchise-magazine {
   background-image: url(/img/sprite.png);
-  background-position: 0px -903px;
+  background-position: 0px -833px;
   width: 55px;
   height: 70px;
 }
 .sprite-awards-philadelphia-daily-news {
   background-image: url(/img/sprite.png);
-  background-position: 0px -833px;
+  background-position: 0px -763px;
   width: 60px;
   height: 70px;
 }
@@ -49,19 +61,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sprite-awards-south-jersey-courier-post {
   background-image: url(/img/sprite.png);
-  background-position: 0px -1185px;
+  background-position: 0px -1113px;
   width: 89px;
   height: 71px;
 }
 .sprite-balloons {
   background-image: url(/img/sprite.png);
-  background-position: 0px -233px;
+  background-position: 0px -188px;
   width: 41px;
   height: 45px;
 }
 .sprite-binoculars {
   background-image: url(/img/sprite.png);
-  background-position: 0px -53px;
+  background-position: 0px -233px;
   width: 64px;
   height: 45px;
 }
@@ -73,7 +85,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sprite-checklist {
   background-image: url(/img/sprite.png);
-  background-position: 0px -416px;
+  background-position: 0px -324px;
   width: 34px;
   height: 46px;
 }
@@ -97,55 +109,61 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .sprite-fdd {
   background-image: url(/img/sprite.png);
-  background-position: 0px -188px;
+  background-position: 0px -143px;
   width: 45px;
   height: 45px;
 }
 .sprite-financing {
   background-image: url(/img/sprite.png);
-  background-position: 0px -143px;
+  background-position: 0px -98px;
   width: 39px;
   height: 45px;
 }
 .sprite-growth {
   background-image: url(/img/sprite.png);
-  background-position: 0px -763px;
+  background-position: 0px -903px;
   width: 65px;
   height: 70px;
 }
 .sprite-interview {
   background-image: url(/img/sprite.png);
-  background-position: 0px -98px;
+  background-position: 0px -53px;
   width: 48px;
   height: 45px;
 }
 .sprite-menu {
   background-image: url(/img/sprite.png);
-  background-position: 0px -623px;
+  background-position: 0px -973px;
   width: 70px;
+  height: 70px;
+}
+.sprite-phillypretzelfactory-logo-sm {
+  background-image: url(/img/sprite.png);
+  background-position: 0px -1043px;
+  width: 75px;
   height: 70px;
 }
 .sprite-phillypretzelfactory-logo {
   background-image: url(/img/sprite.png);
-  background-position: 0px -1330px;
+  background-position: 0px -1550px;
   width: 100px;
   height: 93px;
 }
 .sprite-research {
   background-image: url(/img/sprite.png);
-  background-position: 0px -324px;
+  background-position: 0px -278px;
   width: 30px;
   height: 46px;
 }
 .sprite-sign {
   background-image: url(/img/sprite.png);
-  background-position: 0px -278px;
+  background-position: 0px -416px;
   width: 45px;
   height: 46px;
 }
 .sprite-support {
   background-image: url(/img/sprite.png);
-  background-position: 0px -1043px;
+  background-position: 0px -1184px;
   width: 71px;
   height: 71px;
 }
