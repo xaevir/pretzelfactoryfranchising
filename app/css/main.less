@@ -113,8 +113,8 @@ body {
     a {
       font-size: 15px;
       color: #444 !important;
-      padding-top: 35px;
-      padding-bottom: 15px;
+      padding-top: 35px !important;
+      padding-bottom: 15px !important;
       &:hover {
         background-color: transparent;
         color: #000 !important;
@@ -141,27 +141,6 @@ body {
   }
 }
 
-//#nav-in-header .navbar {
-//  background: #fff;
-//  box-shadow: none;
-//}
-#old-scroll-reveal .navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background: #fff;
-  box-shadow: none;
-  border-radius: 0;
-  ul li a {
-    color: #333;
-    font-size: 16px;
-    &:hover {
-      background-color: transparent;
-      color: #ccc;
-    }
-  }
-}
 #home {
   h1 {
    font-size: 46px;
@@ -383,7 +362,9 @@ body {
     .owl-dots {
       margin-top: 15px;
     }
-
+    .owl-theme .owl-dots .owl-dot span {
+      behavior: url(/libs/PIE.htc);
+    }
     .owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
       background: transparent;
       color: white;
@@ -919,6 +900,9 @@ footer {
   h1 {
     text-align: center;
   }
+  button {
+    position: relative; // pie needs for ie8
+  }
 }
 
 #understand #request-info {
@@ -938,6 +922,7 @@ footer {
   //border: 2px solid rgba(255,255,255,0.4);
   border: 2px solid #fff;
   border-radius: 50%;
+  behavior: url(/libs/PIE.htc);
   text-align: center;
   transition: border-color 200ms ease-in-out;
   i {
@@ -948,4 +933,9 @@ footer {
     bottom: -3px;
     margin: auto;
   }
+}
+
+// ie8 
+.btn {
+  behavior: url(/libs/PIE.htc);
 }

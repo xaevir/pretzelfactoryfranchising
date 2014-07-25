@@ -12,7 +12,9 @@ var gulp = require('gulp')
   , uglify = require('gulp-uglify')
   , jade = require('gulp-jade')
   , plumber = require('gulp-plumber')
-  , minifyCSS = require('gulp-minify-css');
+  , minifyCSS = require('gulp-minify-css')
+  , filesize = require('gulp-filesize');
+
   //, watch = require('gulp-watch')
   //, notify = require('gulp-notify')
 
@@ -37,6 +39,7 @@ gulp.task('compress', function() {
   gulp.src([
     'app/bower_components/jquery/jquery.js',
     'app/bower_components/angular/angular.js',
+    'app/bower_components/ngFitText/ng-FitText.js',
     'app/bower_components/angular-sanitize/angular-sanitize.js',
     'app/libs/ui-bootstrap-collapse-0.10.0.js',
     'app/js/app.js',
@@ -50,11 +53,17 @@ gulp.task('compress', function() {
     'app/bower_components/lodash/dist/lodash.min.js',
     'app/bower_components/bootstrap/js/collapse.js',
     'app/bower_components/ng-notify/dist/ng-notify.min.js',
+    'app/bower_components/greensock/src/minified/TweenLite.min.js',
+    'app/bower_components/greensock/src/minified/plugins/CSSPlugin.min.js',
+    'app/bower_components/equalheight/dist/jquery.equalheight.js'
   ])
     .pipe(concat('app.min.js'))
     .pipe(ngmin())
+    .pipe(filesize())
     .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
+    .pipe(filesize())
+    .pipe(gulp.dest('app/js'))
+    .on('error', util.log);
 });
 
 

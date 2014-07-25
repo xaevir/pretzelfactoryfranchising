@@ -49,17 +49,12 @@ angular.module('pretzelApp.Steps', ['ui.bootstrap.collapse'])
             }
          
           } ); 
-
-
-
-
-
         });
       }
     };
   })
 
-  .directive('stepElement', function () {
+  .directive('stepElement', function ($timeout) {
     return {
       templateUrl: '/js/templates/steps/stepElement.html',
       require:'^steps',
@@ -68,6 +63,12 @@ angular.module('pretzelApp.Steps', ['ui.bootstrap.collapse'])
 
         if (scope.$last){
           scope.$emit('LastElem');
+
+          $timeout(function() { 
+            $('#steps .circle').css({
+              behavior: 'url(/libs/PIE.htc)'
+            });         
+          }, 0);
         }
 
         scope.$watch('isOpen', function(value) {
