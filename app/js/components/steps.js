@@ -54,7 +54,7 @@ angular.module('pretzelApp.Steps', ['ui.bootstrap.collapse'])
     };
   })
 
-  .directive('stepElement', function ($timeout) {
+  .directive('stepElement', ['$timeout', function ($timeout) {
     return {
       templateUrl: '/js/templates/steps/stepElement.html',
       require:'^steps',
@@ -82,4 +82,4 @@ angular.module('pretzelApp.Steps', ['ui.bootstrap.collapse'])
         };
       }
     };
-  });
+  }]);
