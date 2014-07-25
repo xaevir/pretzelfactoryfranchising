@@ -1,7 +1,18 @@
 'use strict';
 
 angular.module('pretzelApp')
+  .directive('parallax', function($window) {
+    return {
+      link: function($scope, $element) {
+         	
+        $($window).on('scroll', function(){
+          var bgYPos = -($($window).scrollTop()) / 1.5;
+          TweenLite.to($element, 0.1, {backgroundPosition: '50% ' + bgYPos + 'px'});      
+        });
 
+      }
+    };
+  })
   .directive('equalHeight', function($timeout) {
     return {
       link: function($scope, $element) {

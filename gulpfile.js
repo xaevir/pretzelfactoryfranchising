@@ -3,9 +3,9 @@
 var gulp = require('gulp')
   , less = require('gulp-less')
   , livereload = require('gulp-livereload')
-  , util = require('gulp-util')
+  , gutil = require('gulp-util')
   , concat = require('gulp-concat')
-  , log = util.log
+  , log = gutil.log
   , templateCache = require('gulp-angular-templatecache')
   , spritesmith = require('gulp.spritesmith')
   , ngmin = require('gulp-ngmin')
@@ -13,20 +13,20 @@ var gulp = require('gulp')
   , jade = require('gulp-jade')
   , plumber = require('gulp-plumber')
   , minifyCSS = require('gulp-minify-css')
-  , filesize = require('gulp-filesize');
+  , filesize = require('gulp-filesize')
+  , notify = require('gulp-notify');
 
   //, watch = require('gulp-watch')
-  //, notify = require('gulp-notify')
-
 
 // change css to styles becasue have less in there
 gulp.task('style', function () {
   log('Generate CSS files ' + (new Date()).toString());
   gulp.src('app/css/main.less')
-    .pipe(plumber())
+    //.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
     .pipe(less())
     .pipe(minifyCSS())
-    .pipe(gulp.dest('app/css'));
+    .pipe(gulp.dest('app/css'))
+    .on('error', gutil.log);
 });
 
 gulp.task('jade', function() {
@@ -63,7 +63,7 @@ gulp.task('compress', function() {
     .pipe(uglify())
     .pipe(filesize())
     .pipe(gulp.dest('app/js'))
-    .on('error', util.log);
+    .on('error', gutil.log);
 });
 
 
