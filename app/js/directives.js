@@ -30,7 +30,7 @@ angular.module('pretzelApp')
           }
           if (direction === 'up') {
             var complete = function (self) {
-              TweenLite.set(self.target, { position: 'static'});
+              TweenLite.set(self.target, { position: 'relative', top: 0});
             };
             TweenLite.to($element, 0.25, {top:-150, onComplete:complete, onCompleteParams:['{self}']});
           }
