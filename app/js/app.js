@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pretzelApp', ['pretzelApp.Steps', 'ngNotify', 'rcForm', 'ngSanitize', 'ngFitText'])
+angular.module('pretzelApp', ['pretzelApp.Steps', 'ngNotify', 'rcForm', 'ngSanitize', 'ngFitText', 'ui.mask'])
   .controller('pretzelCtrl', function ($scope, $http, $filter) {
 
     $scope.pageElements = [];

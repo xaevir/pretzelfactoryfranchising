@@ -1,22 +1,42 @@
 block content
   h1 Request More Info
   form(role="form" name="requestForm" novalidate rc-submit="sendData(data)" ng-controller="requestFormCtrl")
-    .form-group(ng-class="form.classStatus('firstName')")
-      input.form-control.input-lg(type="text" name="firstName" placeholder="FIRST NAME" required ng-model="data.firstName")
-      .help-block(ng-if="requestForm.firstName.$error.required && (requestForm.firstName.$dirty  || form.submitted)")
-        p Please enter your first name
+    .row
+      .col-md-6.row-padding-right
+        .form-group(ng-class="form.classStatus('firstName')")
+          input.form-control.input-lg(type="text" name="firstName" placeholder="FIRST NAME" required ng-model="data.firstName")
+          .help-block(ng-if="requestForm.firstName.$error.required && (requestForm.firstName.$dirty  || form.submitted)")
+            p Please enter your first name
+      .col-md-6
+        .form-group(ng-class="form.classStatus('lastName')")
+          input.form-control.input-lg(type="text" name="lastName" placeholder="LAST NAME" required ng-model="data.lastName")
+          .help-block(ng-if="requestForm.lastName.$invalid && (requestForm.lastName.$dirty  || form.submitted)")
+            p Please enter your last name
 
-    .form-group(ng-class="form.classStatus('lastName')")
-      input.form-control.input-lg(type="text" name="lastName" placeholder="LAST NAME" required ng-model="data.lastName")
-      .help-block(ng-if="requestForm.lastName.$invalid && (requestForm.lastName.$dirty  || form.submitted)")
-        p Please enter your last name
-
+    .form-group(ng-class="form.classStatus('pretzelFactoryInterest')")
+      textarea.form-control.input-lg(rows="2" name="pretzelFactoryInterest" 
+        placeholder="What area are you interested in Opening a Pretzel Factory?"
+        required ng-model="data.pretzelFactoryInterest")
+      .help-block(ng-if="requestForm.pretzelFactoryInterest.$invalid && (requestForm.pretzelFactoryInterest.$dirty  || form.submitted)")
+        p Please enter area of interest 
 
     .form-group(ng-class="form.classStatus('email')")
       input.form-control.input-lg(type="email", name="email", placeholder="EMAIL", required ng-model="data.email")
       .help-block(ng-if="requestForm.email.$invalid && (requestForm.email.$dirty  || form.submitted)")
         p(ng-show="requestForm.email.$error.required") Please enter an email
         p(ng-show="requestForm.email.$error.email") Please enter a valid email
+
+    .form-group(ng-class="form.classStatus('phone')")
+      input.form-control.input-lg(type="text" name="phone" 
+        placeholder="PHONE NUMBER" required ng-model="data.phone" ui-mask="(999) 999-9999")
+      .help-block(ng-if="requestForm.phone.$invalid && (requestForm.phone.$dirty  || form.submitted)")
+        p(ng-show="requestForm.phone.$error.required") Please enter your phone number
+        p(ng-show="requestForm.phone.$error.mask") Please enter all digits 
+
+    .form-group(ng-class="form.classStatus('city')")
+      input.form-control.input-lg(type="text" name="city" placeholder="CITY" required ng-model="data.city")
+      .help-block(ng-if="requestForm.city.$invalid && (requestForm.city.$dirty  || form.submitted)")
+        p Please enter your city 
 
     .form-group(ng-class="form.classStatus('stateID')")
       select.form-control.input-lg(

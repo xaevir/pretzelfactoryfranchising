@@ -6,7 +6,7 @@ angular.module('pretzelApp')
       link: function($scope, $element) {
          	
         $($window).on('scroll', function(){
-          var bgYPos = -($($window).scrollTop()) * 0.5;
+          var bgYPos = -($($window).scrollTop()) * 0.7;
           TweenLite.to($element, 0.1, {backgroundPosition: '50% ' + bgYPos + 'px'});      
         });
 

@@ -24,9 +24,12 @@ app.post('/request-info', koaBody(), function *() {
   var constraint = {
     firstName: new Assert().Required(),
     lastName: new Assert().Required(),
+    phone: new Assert().Required(),
+    city: new Assert().Required(),
     country: new Assert().Required(),
     stateID: new Assert().Required(),
-    email: [new Assert().Required(), new Assert().Email()]
+    email: [new Assert().Required(), new Assert().Email()],
+    pretzelFactoryInterest: new Assert().Required()
   };
 
   var res = validator.validate(this.request.body, constraint);
@@ -44,6 +47,9 @@ app.post('/request-info', koaBody(), function *() {
     subject: 'Philly Pretzel Factory Franchise Lead',
     text: 'firstName: ' + this.request.body.firstName + '\n' +
           'lastName: ' + this.request.body.lastName + '\n' +
+          'phone: ' + this.request.body.phone + '\n' +
+          'city: ' + this.request.body.city + '\n' +
+          'pretzelFactoryInterest: ' + this.request.body.pretzelFactoryInterest + '\n' +
           'email: ' + this.request.body.email + '\n' +
           'country: ' + this.request.body.country + '\n' +
           'stateID: ' + this.request.body.stateID + '\n' +
