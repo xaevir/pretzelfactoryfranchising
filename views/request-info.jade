@@ -38,14 +38,14 @@ block content
       .help-block(ng-if="requestForm.city.$invalid && (requestForm.city.$dirty  || form.submitted)")
         p Please enter your city 
 
-    .form-group(ng-class="form.classStatus('stateID')")
+    .form-group(ng-class="form.classStatus('state')")
       select.form-control.input-lg(
-        name="stateID" 
+        name="state" 
         required 
-        ng-model="data.stateID" 
-        ng-options="state.value as state.name for state in pageElements.states")
+        ng-model="data.state" 
+        ng-options="state.name as state.name for state in pageElements.states")
         option(value="") Select State
-      .help-block(ng-if="requestForm.stateID.$invalid && (requestForm.stateID.$dirty  || form.submitted)")
+      .help-block(ng-if="requestForm.state.$invalid && (requestForm.state.$dirty  || form.submitted)")
         p Please select your state 
 
     button.btn.btn-success.btn-lg.btn-block(type="submit") GET MORE INFO

@@ -17,10 +17,10 @@ angular.module('pretzelApp', ['pretzelApp.Steps', 'ngNotify', 'rcForm', 'ngSanit
   })
   .controller('requestFormCtrl', function ($scope, $http, ngNotify) {
     
-    $scope.data = {country: 1};
+    $scope.data = {country: 'US'};
 
     $scope.resetData = function() {
-      $scope.data = {country: 1};
+      $scope.data = {country: 'US'};
     };
 
     $scope.sendData = function (data) {

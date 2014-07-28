@@ -27,7 +27,7 @@ app.post('/request-info', koaBody(), function *() {
     phone: new Assert().Required(),
     city: new Assert().Required(),
     country: new Assert().Required(),
-    stateID: new Assert().Required(),
+    state: new Assert().Required(),
     email: [new Assert().Required(), new Assert().Email()],
     pretzelFactoryInterest: new Assert().Required()
   };
@@ -41,9 +41,9 @@ app.post('/request-info', koaBody(), function *() {
 
   var mailOptions = {
     from: 'Pretzel Factory Lead <lead@pretzelfactoryfranchising.com>',
-    to: 'phillypretzelfactory@franconnect.com',
-    bcc: 'bobby.chambers33@gmail.com',
-    //to: 'bobby.chambers33@gmail.com',
+    //to: 'phillypretzelfactory@franconnect.com',
+    //bcc: 'bobby.chambers33@gmail.com',
+    to: 'bobby.chambers33@gmail.com',
     subject: 'Philly Pretzel Factory Franchise Lead',
     text: 'firstName: ' + this.request.body.firstName + '\n' +
           'lastName: ' + this.request.body.lastName + '\n' +
@@ -52,7 +52,7 @@ app.post('/request-info', koaBody(), function *() {
           'pretzelFactoryInterest: ' + this.request.body.pretzelFactoryInterest + '\n' +
           'email: ' + this.request.body.email + '\n' +
           'country: ' + this.request.body.country + '\n' +
-          'stateID: ' + this.request.body.stateID + '\n' +
+          'state: ' + this.request.body.state + '\n' +
           'formUrl: http://ownappf.com'
   };
 
