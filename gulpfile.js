@@ -55,7 +55,8 @@ gulp.task('compress', function() {
     'app/bower_components/ng-notify/dist/ng-notify.min.js',
     'app/bower_components/greensock/src/minified/TweenLite.min.js',
     'app/bower_components/greensock/src/minified/plugins/CSSPlugin.min.js',
-    'app/bower_components/equalheight/dist/jquery.equalheight.js'
+    'app/bower_components/equalheight/dist/jquery.equalheight.js',
+    'app/libs/ui-mask.js'
   ])
     .pipe(concat('app.min.js'))
     .pipe(ngmin())
